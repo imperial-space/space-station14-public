@@ -58,7 +58,7 @@
 <Box>
 <GuideEntityEmbed Entity="Bucket"/>
 <GuideEntityEmbed Entity="MobCow"/>
-<GuideEntityEmbed Entity="ReagentContainerMilk"/>
+<GuideEntityEmbed Entity="DrinkMilkCarton"/>
 </Box>
 ## Как разделать мясо:
 В большинстве случаев вы сможете использовать нож прямо на мертвом существе. Лучше всего это делать в морозильной камере, так как результат будет... Неприятный.

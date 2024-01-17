@@ -1,20 +1,13 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitDeathSquad
-  name: Death squad uniform
+  name: death squad uniform
   description: Advanced armored jumpsuit used by special forces in special operations.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpsuit/deathsquad.rsi
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/deathsquad.rsi
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.8
-        Slash: 0.8
-        Piercing: 0.8
-        Heat: 0.8
 
 - type: entity
   parent: ClothingUniformBase
@@ -123,9 +116,9 @@
   description: A yellow turtleneck designed specifically for work in conditions of the engineering department.
   components:
   - type: Sprite
-    sprite: Clothing/Uniforms/Jumpsuit/ceturtle.rsi
+    sprite: Clothing/Uniforms/Jumpsuit/ce_turtle.rsi
   - type: Clothing
-    sprite: Clothing/Uniforms/Jumpsuit/ceturtle.rsi
+    sprite: Clothing/Uniforms/Jumpsuit/ce_turtle.rsi
 
 - type: entity
   parent: ClothingUniformBase
@@ -137,6 +130,17 @@
       sprite: Clothing/Uniforms/Jumpsuit/chaplain.rsi
     - type: Clothing
       sprite: Clothing/Uniforms/Jumpsuit/chaplain.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCentcomAgent
+  name: CentCom agent's jumpsuit
+  description: A suit worn by CentCom's legal team. Smells of burnt coffee.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/centcom_agent.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/centcom_agent.rsi
 
 - type: entity
   parent: ClothingUniformBase
@@ -210,11 +214,32 @@
   name: clown suit
   description: HONK!
   components:
-    - type: Sprite
-      sprite: Clothing/Uniforms/Jumpsuit/clown.rsi
-    - type: Clothing
-      sprite: Clothing/Uniforms/Jumpsuit/clown.rsi
-      femaleMask: UniformTop
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/clown.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/clown.rsi
+    femaleMask: UniformTop
+  - type: Tag
+    tags:
+    - ClownSuit
+
+- type: entity
+  parent: ClothingUniformJumpsuitClown
+  id: ClothingUniformJumpsuitClownBanana
+  name: banana clown suit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/clown_banana.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/clown_banana.rsi
+    femaleMask: UniformTop
+  - type: Construction
+    graph: BananaClownJumpsuit
+    node: jumpsuit
+  - type: Armor
+    modifiers:
+      coefficients:
+        Radiation: 0.8
 
 - type: entity
   parent: ClothingUniformBase
@@ -955,7 +980,7 @@
       mode: SensorOff
 
 - type: entity
-  parent: UnsensoredClothingUniformBase
+  parent: ClothingUniformBase
   id: ClothingUniformJumpsuitMercenary
   name: mercenary jumpsuit
   description: Clothing for real mercenaries who have gone through fire, water and the jungle of planets flooded with dangerous monsters or targets for which a reward has been assigned.
@@ -1081,14 +1106,10 @@
   name: ERT engineering uniform
   description: A special suit made for the elite engineers under CentCom.
   components:
-    - type: Sprite
-      sprite: Clothing/Uniforms/Jumpsuit/ert_engineer.rsi
-    - type: Clothing
-      sprite: Clothing/Uniforms/Jumpsuit/ert_engineer.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Radiation: 0.8
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/ert_engineer.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/ert_engineer.rsi
 
 - type: entity
   parent: ClothingUniformBase
@@ -1111,12 +1132,6 @@
     sprite: Clothing/Uniforms/Jumpsuit/ert_leader.rsi
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/ert_leader.rsi
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.8
-        Slash: 0.8
-        Piercing: 0.8
 
 - type: entity
   parent: ClothingUniformBase
@@ -1137,16 +1152,10 @@
   name: ERT security uniform
   description: A special suit made for the elite security under CentCom.
   components:
-    - type: Sprite
-      sprite: Clothing/Uniforms/Jumpsuit/ert_security.rsi
-    - type: Clothing
-      sprite: Clothing/Uniforms/Jumpsuit/ert_security.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.8
-          Slash: 0.8
-          Piercing: 0.8
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/ert_security.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/ert_security.rsi
 
 - type: entity
   parent: ClothingUniformJumpsuitClown
@@ -1448,3 +1457,14 @@
       - state: equipped-INNERCLOTHING-jumpsuit
       - state: equipped-INNERCLOTHING-shirt
         color: "#b30000"
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitFamilyGuy
+  name: familiar garbs
+  description: Makes you remember the time you did something funny.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/familiar_garbs.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/familiar_garbs.rsi

@@ -39,34 +39,7 @@
   - type: MovementIgnoreGravity
   - type: IntrinsicRadioReceiver
   - type: ActiveRadio
-    channels:
-    - Binary
-    - Common
-    - Command
-    - CentCom
-    - Engineering
-    - Medical
-    - Science
-    - Security
-    - Service
-    - Supply
-    - Syndicate
-# Imperial custom channels start
-    - Expedition
-    - Cult
-    - Military
-    - Shadow
-    - Radio1
-    - Radio2
-    - Radio3
-    - Radio4
-    - Radio5
-    - Radio6
-    - Radio7
-    - Radio8
-    - Radio9
-    - Radio10
-# Imperial custom channels end
+    receiveAllChannels: true
     globalReceive: true
   - type: Physics
     bodyType: KinematicController

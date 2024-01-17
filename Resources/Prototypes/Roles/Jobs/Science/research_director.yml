@@ -22,6 +22,7 @@
   - Command
   - Maintenance
   - ResearchDirector
+  - Brig
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
@@ -35,7 +36,7 @@
     jumpsuit: ClothingUniformJumpsuitResearchDirector
     back: ClothingBackpackResearchDirectorFilled
     shoes: ClothingShoesColorBrown
-    outerClothing: ClothingOuterCoatRnd
+    outerClothing: ClothingOuterCoatRD
     id: RnDPDA
     ears: ClothingHeadsetRD
   innerClothingSkirt: ClothingUniformJumpskirtResearchDirector

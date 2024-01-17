@@ -8,6 +8,8 @@
     ClothingUniformJumpskirtParamedic: 4
     ClothingUniformJumpsuitCoroner: 4
     ClothingUniformJumpskirtCoroner: 4
+    ClothingUniformJumpsuitMedicalDoctor: 4
+    ClothingUniformJumpskirtMedicalDoctor: 4
     ClothingHeadNurseHat: 4
     ClothingOuterCoatLab: 4
     ClothingShoesColorWhite: 4
@@ -15,12 +17,8 @@
     ClothingHandsGlovesNitrile: 4
     ClothingHeadsetMedical: 4
     ClothingOuterWinterMed: 2
-    ClothingOuterWinterPara: 2
-    ClothingOuterCoatParamedicWB: 2
-    ClothingHeadHatParamedicsoft: 2
-    ClothingHeadHelmetVoidParamed: 1
-    ClothingOuterHardsuitVoidParamed: 1
     ClothingOuterHospitalGown: 5
     UniformScrubsColorGreen: 4
     UniformScrubsColorBlue: 4
     UniformScrubsColorPurple: 4
+    ClothingShoesBootsWinterMed: 2

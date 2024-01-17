@@ -52,6 +52,9 @@ namespace Content.Server.Communications
             SubscribeLocalEvent<CommunicationsConsoleComponent, CommunicationsConsoleAnnounceMessage>(OnAnnounceMessage);
             SubscribeLocalEvent<CommunicationsConsoleComponent, CommunicationsConsoleCallEmergencyShuttleMessage>(OnCallShuttleMessage);
             SubscribeLocalEvent<CommunicationsConsoleComponent, CommunicationsConsoleRecallEmergencyShuttleMessage>(OnRecallShuttleMessage);
+
+            // On console init, set cooldown
+            SubscribeLocalEvent<CommunicationsConsoleComponent, MapInitEvent>(OnCommunicationsConsoleMapInit);
         }
 
         public override void Update(float frameTime)
@@ -77,6 +80,11 @@ namespace Content.Server.Communications
             }
 
             base.Update(frameTime);
+        }
+
+        public void OnCommunicationsConsoleMapInit(EntityUid uid, CommunicationsConsoleComponent comp, MapInitEvent args)
+        {
+            comp.AnnouncementCooldownRemaining = comp.InitialDelay;
         }
 
         /// <summary>
@@ -255,7 +263,7 @@ namespace Content.Server.Communications
 
                 if (_idCardSystem.TryFindIdCard(mob, out var id))
                 {
-                    author = $"{id.FullName} ({CultureInfo.CurrentCulture.TextInfo.ToTitleCase(id.JobTitle ?? string.Empty)})".Trim();
+                    author = $"{id.Comp.FullName} ({CultureInfo.CurrentCulture.TextInfo.ToTitleCase(id.Comp.JobTitle ?? string.Empty)})".Trim();
                 }
             }
 

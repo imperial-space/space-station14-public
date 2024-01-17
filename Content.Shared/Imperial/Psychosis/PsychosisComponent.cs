@@ -90,5 +90,5 @@ public sealed partial class PsychosisComponent : Component
 
     public string PopUp = string.Empty;
 
-    public IPlayingAudioStream? Stream;
+    //public IPlayingAudioStream? Stream;
 }

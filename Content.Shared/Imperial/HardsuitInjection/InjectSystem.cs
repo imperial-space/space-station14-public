@@ -37,8 +37,8 @@ public sealed class InjectSystem : EntitySystem
     [Dependency] private readonly SharedStrippableSystem _strippable = default!;
     [Dependency] private readonly IEntityManager _entManager = default!;
     [Dependency] private readonly INetManager _netManager = default!;
-    [Dependency] private readonly SolutionContainerSystem _solutions = default!;
-    [Dependency] private readonly SharedAudioSystem _audio = default!;
+    //[Dependency] private readonly SolutionContainerSystem _solutions = default!;
+    //[Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly ReactiveSystem _reactiveSystem = default!;
     [Dependency] private readonly ISharedAdminLogManager _sharedAdminLogSystem = default!;
 
@@ -128,9 +128,9 @@ public sealed class InjectSystem : EntitySystem
         var ui = GetEntity(args.Uid.Value);
         if (!TryComp<AppearanceComponent>(ui, out var appearance))
             return;
-        var removedSolution = _solutions.SplitSolution(ui, args.Solution, args.Realtransfer.Value);
-        args.End = removedSolution;
-        _entManager.System<SolutionContainerSystem>().UpdateAppearance(ui, args.Solution, appearance);
+        //var removedSolution = _solutions.SplitSolution(ui, args.Solution, args.Realtransfer.Value);
+        //args.End = removedSolution;
+        //_entManager.System<SolutionContainerSystem>().UpdateAppearance(ui, args.Solution, appearance);
     }
     private void OnExamine(EntityUid uid, InjectComponent component, ExaminedEvent args)
     {
@@ -267,36 +267,36 @@ public sealed class InjectSystem : EntitySystem
                 return;
             }
             var actualbeaker = beaker.Value;
-            if (!_solutions.TryGetSolution(actualbeaker, "beaker", out var solution))
-                return;
-            if (!_solutions.TryGetInjectableSolution(user, out var targetSolution))
-                return;
-            if (solution.Volume <= 0)
-            {
-                _popupSystem.PopupEntity(Loc.GetString("hardsuitinjection-empty"), user, user);
-                return;
-            }
-            var realTransferAmount = FixedPoint2.Min(solution.Volume, targetSolution.AvailableVolume);
-            if (realTransferAmount <= 0)
-            {
-                _popupSystem.PopupEntity(Loc.GetString("hardsuitinjection-full"), user, user);
-                return;
-            }
-            var ev = new UpdateEvent(GetNetEntity(actualbeaker), solution, realTransferAmount);
-            RaiseLocalEvent(uid, ev);
-            if (ev.End == null)
-                return;
-            var removedSolution = ev.End;
-            if (!targetSolution.CanAddSolution(removedSolution))
-                return;
-            if (args.Performer == uid)
-                _sharedAdminLogSystem.Add(LogType.ForceFeed, $"{_entManager.ToPrettyString(user):user} injected his ES into yourself with a solution {SolutionContainerSystem.ToPrettyString(removedSolution):removedSolution}");
-            else
-                _sharedAdminLogSystem.Add(LogType.ForceFeed, $"{_entManager.ToPrettyString(user):user} ES injected with a solution {SolutionContainerSystem.ToPrettyString(removedSolution):removedSolution}");
-            _reactiveSystem.DoEntityReaction(user, removedSolution, ReactionMethod.Injection);
-            _solutions.TryAddSolution(user, targetSolution, removedSolution);
-            _audio.PlayPvs(component.InjectSound, user);
-            _popupSystem.PopupEntity(Loc.GetString("hypospray-component-feel-prick-message"), user, user);
+            //if (!_solutions.TryGetSolution(actualbeaker, "beaker", out var solution))
+            //    return;
+            //if (!_solutions.TryGetInjectableSolution(user, out var targetSolution))
+            //    return;
+            //if (solution.Volume <= 0)
+            //{
+            //    _popupSystem.PopupEntity(Loc.GetString("hardsuitinjection-empty"), user, user);
+            //    return;
+            //}
+            //var realTransferAmount = FixedPoint2.Min(solution.Volume, targetSolution.AvailableVolume);
+            //if (realTransferAmount <= 0)
+            //{
+            //    _popupSystem.PopupEntity(Loc.GetString("hardsuitinjection-full"), user, user);
+            //    return;
+            //}
+            //var ev = new UpdateEvent(GetNetEntity(actualbeaker), solution, realTransferAmount);
+            //RaiseLocalEvent(uid, ev);
+            //if (ev.End == null)
+            //    return;
+            //var removedSolution = ev.End;
+            //if (!targetSolution.CanAddSolution(removedSolution))
+            //    return;
+            //if (args.Performer == uid)
+            //    _sharedAdminLogSystem.Add(LogType.ForceFeed, $"{_entManager.ToPrettyString(user):user} injected his ES into yourself with a solution {SolutionContainerSystem.ToPrettyString(removedSolution):removedSolution}");
+            //else
+            //    _sharedAdminLogSystem.Add(LogType.ForceFeed, $"{_entManager.ToPrettyString(user):user} ES injected with a solution {SolutionContainerSystem.ToPrettyString(removedSolution):removedSolution}");
+            //_reactiveSystem.DoEntityReaction(user, removedSolution, ReactionMethod.Injection);
+            //_solutions.TryAddSolution(user, targetSolution, removedSolution);
+            //_audio.PlayPvs(component.InjectSound, user);
+            //_popupSystem.PopupEntity(Loc.GetString("hypospray-component-feel-prick-message"), user, user);
 
             args.Handled = true;
         }

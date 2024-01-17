@@ -48,6 +48,7 @@
   - Salvage
   - Security
   - Brig
+  - Lawyer
   - Cargo
   - Atmospherics
   - Medical
@@ -66,6 +67,7 @@
     shoes: ClothingShoesColorBrown
     head: ClothingHeadHatHopcap
     id: HoPPDA
+    gloves: ClothingHandsGlovesHop
     ears: ClothingHeadsetAltCommand
     belt: BoxFolderClipboard
   innerClothingSkirt: ClothingUniformJumpskirtHoP
