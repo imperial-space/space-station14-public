@@ -46,6 +46,7 @@
   - HeadOfSecurity
   - ResearchDirector
   - Quartermaster
+  primary: false
   - IAA
 
 - type: department
@@ -56,7 +57,6 @@
   roles:
   - AtmosphericTechnician
   - ChiefEngineer
-  - SeniorEngineer
   - StationEngineer
   - TechnicalAssistant
 
@@ -72,7 +72,6 @@
   - MedicalIntern
   - Psychologist
   - Paramedic
-  - SeniorPhysician
   - Coroner
 
 - type: department
@@ -84,7 +83,6 @@
   - HeadOfSecurity
   - SecurityCadet
   - SecurityOfficer
-  - SeniorOfficer
   - Detective
   - Warden
   - Brigmedic
@@ -96,7 +94,6 @@
   color: "#D381C9"
   roles:
   - ResearchDirector
-  - SeniorResearcher
   - Scientist
   - ResearchAssistant
 
@@ -110,3 +107,4 @@
   - Reporter
   - Zookeeper
   - Psychologist
+  primary: false

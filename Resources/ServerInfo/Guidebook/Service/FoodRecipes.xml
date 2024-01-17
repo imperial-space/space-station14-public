@@ -1,4 +1,3 @@
-<Document>
 ## Начало
 Это не обширный список рецептов, эти списки призваны продемонстрировать основы.
 
@@ -20,18 +19,18 @@
 - Сырой животный белок: измельчить сырое мясо.
 
 <Box>
-<GuideEntityEmbed Entity="FoodDough"/>
-<GuideEntityEmbed Entity="FoodDoughCornmeal"/>
-<GuideEntityEmbed Entity="FoodTofu"/>
-<GuideEntityEmbed Entity="FoodDoughPie"/>
-<GuideEntityEmbed Entity="FoodCakeBatter"/>
-<GuideEntityEmbed Entity="FoodDoughFlat"/>
+	<GuideEntityEmbed Entity="FoodDough"/>
+	<GuideEntityEmbed Entity="FoodDoughCornmeal"/>
+	<GuideEntityEmbed Entity="FoodTofu"/>
+	<GuideEntityEmbed Entity="FoodDoughPie"/>
+	<GuideEntityEmbed Entity="FoodCakeBatter"/>
+	<GuideEntityEmbed Entity="FoodDoughFlat"/>
 </Box>
 
 <Box>
-<GuideEntityEmbed Entity="FoodButter"/>
-<GuideEntityEmbed Entity="FoodMeatMeatball"/>
-<GuideEntityEmbed Entity="FoodCheese"/>
+	<GuideEntityEmbed Entity="FoodButter"/>
+	<GuideEntityEmbed Entity="FoodMeatMeatball"/>
+	<GuideEntityEmbed Entity="FoodCheese"/>
 </Box>
 
 ## Вторичные продукты
@@ -53,15 +52,15 @@
 - Яблочный пирог: 1 тесто для пирога, 3 яблока и 1 форма для пирога на 15 секунд.
 
 <Box>
-<GuideEntityEmbed Entity="FoodBreadPlain"/>
-<GuideEntityEmbed Entity="FoodBurgerPlain"/>
-<GuideEntityEmbed Entity="FoodSoupTomato"/>
-<GuideEntityEmbed Entity="FoodSaladCitrus"/>
+	<GuideEntityEmbed Entity="FoodBreadPlain"/>
+	<GuideEntityEmbed Entity="FoodBurgerPlain"/>
+	<GuideEntityEmbed Entity="FoodSoupTomato"/>
+	<GuideEntityEmbed Entity="FoodSaladCitrus"/>
 </Box>
 <Box>
-<GuideEntityEmbed Entity="FoodPizzaMargherita"/>
-<GuideEntityEmbed Entity="FoodCakePlain"/>
-<GuideEntityEmbed Entity="FoodPieApple"/>
+	<GuideEntityEmbed Entity="FoodPizzaMargherita"/>
+	<GuideEntityEmbed Entity="FoodCakePlain"/>
+	<GuideEntityEmbed Entity="FoodPieApple"/>
 </Box>
 
 </Document>

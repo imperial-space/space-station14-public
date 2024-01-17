@@ -7,6 +7,7 @@
   icon: "JobIconJanitor"
   supervisors: job-supervisors-hop
   access:
+  - Service
   - Janitor
   - Maintenance
   special:
@@ -22,6 +23,7 @@
     shoes: ClothingShoesGaloshes
     head: ClothingHeadHatPurplesoft
     id: JanitorPDA
+    gloves: ClothingHandsGlovesJanitor
     ears: ClothingHeadsetService
     belt: ClothingBeltJanitorFilled
   innerClothingSkirt: ClothingUniformJumpskirtJanitor
@@ -32,8 +34,9 @@
   id: JanitorMaidGear #NewMaidClothing mode
   equipment:
     jumpsuit: ClothingUniformJumpskirtJanimaid
-    back: ClothingBackpackBackbow
-    id: JanimaidPDA
+    back: ClothingBackpackFilled
+    id: JanitorPDA
+    gloves: ClothingHandsGlovesJanitor
     head: ClothingHeadHatCatEars
     ears: ClothingHeadsetJanimaid
     neck: ClothingNeckMaidChoker

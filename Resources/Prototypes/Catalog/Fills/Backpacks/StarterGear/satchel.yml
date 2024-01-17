@@ -75,6 +75,16 @@
 
 - type: entity
   noSpawn: true
+  parent: ClothingBackpackSatchelMedical
+  id: ClothingBackpackSatchelParamedicFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalMedical
+      - id: EmergencyRollerBedSpawnFolded
+
+- type: entity
+  noSpawn: true
   parent: ClothingBackpackSatchelCaptain
   id: ClothingBackpackSatchelCaptainFilled
   components:
@@ -234,11 +244,11 @@
   components:
     - type: StorageFill
       contents:
-        - id: BoxSurvival
-        - id: Lighter
-        - id: CigPackBlack
-        - id: BoxForensicPad
-        - id: HandLabeler
+      - id: BoxSurvival
+      - id: BoxForensicPad
+      - id: Lighter
+      - id: CigPackBlack
+      - id: HandLabeler
 
 - type: entity
   noSpawn: true
