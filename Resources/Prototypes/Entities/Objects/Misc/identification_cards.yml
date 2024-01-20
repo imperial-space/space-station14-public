@@ -646,6 +646,11 @@
     - JobIconServiceWorker
     - JobIconSecurityCadet
     - JobIconZookeeper
+    - JobIconSeniorPhysician
+    - JobIconSeniorOfficer
+    - JobIconSeniorEngineer
+    - JobIconSeniorResearcher
+    - JobIconCoroner
     - JobIconVisitor
   - type: ActivatableUI
     key: enum.AgentIDCardUiKey.Key
