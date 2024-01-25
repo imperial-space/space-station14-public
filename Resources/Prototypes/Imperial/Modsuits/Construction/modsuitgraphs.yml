@@ -278,7 +278,7 @@
                 sprite: Imperial/Modsuits/plating.rsi
                 state: cmo-plating
               doAfter: 2
-            - tag: ControlModsuitRescue
+            - tag: ModsuitControlRescue
               name: Каркас спасательного Р.И.Г-а
               icon:
                 sprite: Imperial/Modsuits/constructing_modsuit.rsi
@@ -301,7 +301,7 @@
                 sprite: Imperial/Modsuits/plating.rsi
                 state: magnate-plating
               doAfter: 2
-            - tag: ControlModsuitMagnate
+            - tag: ModsuitControlMagnate
               name: Каркас роскошного Р.И.Г-а
               icon:
                 sprite: Imperial/Modsuits/constructing_modsuit.rsi
@@ -324,7 +324,7 @@
                 sprite: Imperial/Modsuits/plating.rsi
                 state: security-plating
               doAfter: 2
-            - tag: ControlModsuitSafeguard
+            - tag: ModsuitControlSafeguard  
               name: Каркас  Р.И.Г-а Гвардейца
               icon:
                 sprite: Imperial/Modsuits/constructing_modsuit.rsi
