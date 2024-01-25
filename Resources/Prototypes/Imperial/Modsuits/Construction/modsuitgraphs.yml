@@ -85,7 +85,7 @@
   start: start
   graph:
     - node: start
-      entity: ControlModsuitConstructingEnd
+      entity: ParticleAcceleratorControlBoxUnfinished
       edges:
         - to: modsuitengineer
           steps:
