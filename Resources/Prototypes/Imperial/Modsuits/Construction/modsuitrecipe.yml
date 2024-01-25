@@ -10,6 +10,17 @@
   objectType: Item
 
 - type: construction
+  name: Инженерный Р.И.Г
+  id: ModsuitEngineer
+  graph: ModsuitEngineer
+  startNode: start
+  targetNode: modsuitengineer
+  category: construction-category-clothing
+  description: Р.И.Г, созданный специально под нужды профессии.
+  icon: { sprite: Imperial/Modsuits/Clothing/Back/engineer.rsi, state: icon }
+  objectType: Item
+
+- type: construction
   name: Медицинский Р.И.Г
   id: ModsuitMedical
   graph: ModsuitMedical
