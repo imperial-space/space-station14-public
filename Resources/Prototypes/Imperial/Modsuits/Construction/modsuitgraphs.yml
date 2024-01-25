@@ -85,6 +85,7 @@
   start: start
   graph:
     - node: start
+      entity: ControlModsuitConstructingEnd
       edges:
         - to: modsuitengineer
           steps:
@@ -93,13 +94,7 @@
               icon:
                 sprite: Imperial/Modsuits/plating.rsi
                 state: engineering-plating
-              doAfter: 2
-            - tag: ModsuitControlEnd
-              name: собранный каркас РИГ-а
-              icon:
-                sprite: Imperial/Modsuits/constructing_modsuit.rsi
-                state: CORE-equip8
-              doAfter: 2
+              doAfter: 0.5
     - node: modsuitengineer
       entity: ClothingControlModsuitEngineerSealed
 
@@ -255,7 +250,7 @@
                 sprite: Imperial/Modsuits/plating.rsi
                 state: ce-plating
               doAfter: 2
-            - tag: ModsuitControlAdvanced
+            - tag: ControlModsuitAdvanced
               name: Каркас продвинутого Р.И.Г-а
               icon:
                 sprite: Imperial/Modsuits/constructing_modsuit.rsi
