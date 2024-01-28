@@ -48,7 +48,7 @@
 #CBURN START
 - type: entity
   noSpawn: false
-  parent: ClothingBackpackDuffelCBURN
+  parent: ClothingBackpackERTSecurity
   id: ClothingBackpackCallERTCBURNFilled
   components:
     - type: StorageFill
@@ -58,13 +58,13 @@
 
 - type: entity
   noSpawn: false
-  parent: ClothingBackpackDuffelCBURN
+  parent: ClothingBackpackERTLeader
   id: ClothingBackpackCallERTCBURNFilledLeader
   components:
     - type: StorageFill
       contents:
         - id: BoxSurvival
-        - id: PillRomerol
+        - id: PillAmbuzolPlus
         - id: PinpointerNuclear
 
 - type: entity
