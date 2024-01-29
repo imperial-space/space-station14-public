@@ -211,3 +211,45 @@
       - id: Multitool
       - id: CableApcStack
 #DEAD SQUAD END
+
+#BUNDLE START
+- type: entity
+  parent: ClothingBackpackDuffel
+  id: ClothingBackpackDuffelFilledKammerer
+  name: Kammerer bundle
+  description: "Lean and mean: Contains the popular Bulldog Shotgun, a 12g beanbag drum and 3 12g buckshot drums." #, and a pair of Thermal Imaging Goggles.
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponShotgunKammerer
+      - id: MagazineShotgun
+      - id: MagazineShotgun
+      - id: MagazineShotgunBeanbag
+
+- type: entity
+  parent: ClothingBackpackDuffel
+  id: ClothingBackpackDuffelFilledBulldog
+  name: Bulldog bundle
+  description: "Lean and mean: Contains the popular Bulldog Shotgun, a 12g beanbag drum and 3 12g buckshot drums." #, and a pair of Thermal Imaging Goggles.
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponShotgunBulldog
+      - id: MagazineShotgun
+      - id: MagazineShotgun
+      - id: MagazineShotgunBeanbag
+
+- type: entity
+  parent: ClothingBackpackDuffel
+  id: ClothingBackpackDuffelFilledRifle
+  name: Lecter bundle
+  description: "Old faithful: The classic C-20r Submachine Gun, bundled with three magazines." #, and a Suppressor.
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponRifleLecter
+      - id: MagazineRifle
+      - id: MagazineRifle
+      - id: MagazineRifleRubber
+
+#BUNDLE END
