@@ -9,7 +9,7 @@
       time: 7200 #Imperial role timers
   startingGear: LawyerGear
   icon: "JobIconLawyer"
-  supervisors: job-supervisors-hop
+  supervisors: job-supervisors-IAA #imperial Space custom deraptment
   access:
   - Service
   - Brig

@@ -13,3 +13,4 @@ job-supervisors-medicine = Врачам, Химикам и Главному Вр
 job-supervisors-security = Офицерам СБ, Смотрителю и ГСБ
 job-supervisors-hire = Своим нанимателям
 job-supervisors-everyone = Вообще всем
+job-supervisors-IAA = Агенту Внутренних Дел
