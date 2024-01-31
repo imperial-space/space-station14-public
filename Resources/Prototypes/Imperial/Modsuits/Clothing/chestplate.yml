@@ -19,7 +19,7 @@
     requiredSlot: outerClothing
     slot: head
   - type: TemperatureProtection
-    coefficient: 0.0001
+    coefficient: 0.00001
   - type: ClothingSpeedModifier
     walkModifier: 1
     sprintModifier: 1
@@ -83,7 +83,7 @@
   - type: Clothing
     sprite: Imperial/Modsuits/Clothing/OuterClothing/engineer.rsi
   - type: PressureProtection
-    highPressureMultiplier: 0.00002
+    highPressureMultiplier: 0.000001
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.25
@@ -121,7 +121,7 @@
   - type: Clothing
     sprite: Imperial/Modsuits/Clothing/OuterClothing/rnd.rsi
   - type: PressureProtection
-    highPressureMultiplier: 0.00006
+    highPressureMultiplier: 0.00003
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.1
@@ -192,7 +192,7 @@
   - type: Clothing
     sprite: Imperial/Modsuits/Clothing/OuterClothing/medical.rsi
   - type: TemperatureProtection
-    coefficient: 0.0001
+    coefficient: 0.00001
   - type: ExplosionResistance
     damageCoefficient: 0.9
   - type: Armor
@@ -222,7 +222,7 @@
   - type: Clothing
     sprite: Imperial/Modsuits/Clothing/OuterClothing/cmo.rsi
   - type: PressureProtection
-    highPressureMultiplier: 0.00002
+    highPressureMultiplier: 0.00001
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.6
@@ -257,7 +257,7 @@
   - type: Clothing
     sprite: Imperial/Modsuits/Clothing/OuterClothing/civillian.rsi
   - type: PressureProtection
-    highPressureMultiplier: 0.001
+    highPressureMultiplier: 0.00001
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.9
@@ -291,7 +291,7 @@
   - type: Clothing
     sprite: Imperial/Modsuits/Clothing/OuterClothing/magnate.rsi
   - type: PressureProtection
-    highPressureMultiplier: 0.00001
+    highPressureMultiplier: 0.000001
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.3
@@ -326,7 +326,7 @@
   - type: Clothing
     sprite: Imperial/Modsuits/Clothing/OuterClothing/security.rsi
   - type: PressureProtection
-    highPressureMultiplier: 0.0035
+    highPressureMultiplier: 0.000035
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.3
@@ -394,7 +394,7 @@
   - type: Clothing
     sprite: Imperial/Modsuits/Clothing/OuterClothing/salvage.rsi
   - type: PressureProtection
-    highPressureMultiplier: 0.0041
+    highPressureMultiplier: 0.000041
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.5
@@ -727,7 +727,7 @@
   - type: Clothing
     sprite: Imperial/Modsuits/Clothing/OuterClothing/sstcmd.rsi
   - type: PressureProtection
-    highPressureMultiplier: 0.000000001
+    highPressureMultiplier: 0.00000000001
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.05
@@ -792,7 +792,7 @@
   - type: Clothing
     sprite: Imperial/Modsuits/Clothing/OuterClothing/sstsupport.rsi
   - type: PressureProtection
-    highPressureMultiplier: 0.000000001
+    highPressureMultiplier: 0.00000000001
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.1
@@ -857,7 +857,7 @@
   - type: Clothing
     sprite: Imperial/Modsuits/Clothing/OuterClothing/nukeopscmd.rsi
   - type: PressureProtection
-    highPressureMultiplier: 0.000000001
+    highPressureMultiplier: 0.00000000001
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.3
@@ -922,7 +922,7 @@
   - type: Clothing
     sprite: Imperial/Modsuits/Clothing/OuterClothing/nakamuraengineer.rsi
   - type: PressureProtection
-    highPressureMultiplier: 0.0004
+    highPressureMultiplier: 0.00000075
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.25

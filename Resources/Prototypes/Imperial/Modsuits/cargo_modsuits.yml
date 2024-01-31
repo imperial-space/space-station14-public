@@ -6,6 +6,7 @@
     contents:
       - id: CoreBasicModsuitConstructing
       - id: CoreBasicModsuitConstructing
+      - id: CoreBasicModsuitConstructing
   - type: Destructible
     thresholds:
     - trigger:
