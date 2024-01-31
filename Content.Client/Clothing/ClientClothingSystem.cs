@@ -42,7 +42,7 @@ public sealed class ClientClothingSystem : ClothingSystem
         {"id", "IDCARD"},
         {"pocket1", "POCKET1"},
         {"pocket2", "POCKET2"},
-        {"suitstorage", "BACKPACK"}, //Imperial edit
+        {"suitstorage", "SUITSTORAGE"},
     };
 
     [Dependency] private readonly IResourceCache _cache = default!;
