@@ -23,7 +23,7 @@
       path: /Audio/Imperial/ert_sniper/laser_sniper.ogg
   - type: HitscanBatteryAmmoProvider
     proto: PulseSniper
-    fireCost: 750
+    fireCost: 1500
   - type: Battery
-    maxCharge: 3750
-    startingCharge: 3750
+    maxCharge: 7500
+    startingCharge: 7500
