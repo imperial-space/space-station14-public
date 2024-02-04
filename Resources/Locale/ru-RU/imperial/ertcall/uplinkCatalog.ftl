@@ -62,6 +62,8 @@ ert-uplink-explosives-c4-desc = { ent-C4.desc }
 ert-uplink-explosives-clusterbangfull-name = { ent-ClusterBangFull }
 ert-uplink-explosives-clusterbangfull-desc = { ent-ClusterBangFull.desc }
 
+ert-uplink-engineering-amejar-name = { ent-AmeJar }
+ert-uplink-engineering-amejar-desc = { ent-AmeJar.desc }
 ert-uplink-engineering-clothingeyesglassesmeson-name = { ent-ClothingEyesGlassesMeson }
 ert-uplink-engineering-clothingeyesglassesmeson-desc = { ent-ClothingEyesGlassesMeson.desc }
 ert-uplink-engineering-jawsoflife-name = { ent-JawsOfLife }
@@ -104,17 +106,18 @@ ert-uplink-engineering-boxinflatable-name = { ent-BoxInflatable }
 ert-uplink-engineering-boxinflatable-desc = { ent-BoxInflatable.desc }
 ert-uplink-engineering-welderindustrialadvanced-name = { ent-WelderIndustrialAdvanced }
 ert-uplink-engineering-welderindustrialadvanced-desc = { ent-WelderIndustrialAdvanced.desc }
-
 ert-uplink-medical-omnizinechemistrybottle-name = { ent-OmnizineChemistryBottle }
 ert-uplink-medical-omnizinechemistrybottle-desc = { ent-OmnizineChemistryBottle.desc }
+ert-uplink-medical-thriveninchemistrybottle-name = { ent-ThriveninChemistryBottle }
+ert-uplink-medical-thriveninchemistrybottle-desc = { ent-ThriveninChemistryBottle.desc }
 ert-uplink-medical-hypospray-name = { ent-Hypospray }
 ert-uplink-medical-hypospray-desc = { ent-Hypospray.desc }
 ert-uplink-medical-gauze-name = { ent-Gauze }
 ert-uplink-medical-gauze-desc = { ent-Gauze.desc }
-ert-uplink-medical-brutepack-name = { ent-Brutepack }
-ert-uplink-medical-brutepack-desc = { ent-Brutepack.desc }
-ert-uplink-medical-ointment-name = { ent-Ointment }
-ert-uplink-medical-ointment-desc = { ent-Ointment.desc }
+ert-uplink-medical-medicatedsuture-name = { ent-MedicatedSuture }
+ert-uplink-medical-medicatedsuture-desc = { ent-MedicatedSuture.desc }
+ert-uplink-medical-regenerativemesh-name = { ent-RegenerativeMesh }
+ert-uplink-medical-regenerativemesh-desc = { ent-RegenerativeMesh.desc }
 ert-uplink-medical-stimpack-name = { ent-Stimpack }
 ert-uplink-medical-stimpack-desc = { ent-Stimpack.desc }
 ert-uplink-medical-compactdefibrillator-name = { ent-CompactDefibrillator }
@@ -203,4 +206,6 @@ ert-uplink-utilities-crowbar-desc = { ent-Crowbar.desc }
 ert-uplink-utilities-cratemineshield-name = { ent-ERTCallCrateMineShieldImplant }
 ert-uplink-utilities-cratemineshield-desc = { ent-ERTCallCrateMineShieldImplant.desc }
 
-
+ent-ThriveninChemistryBottle = бутылочка трайвонина
+    .desc = { ent-BaseChemistryEmptyBottle.desc }
+    .suffix = { "" }
