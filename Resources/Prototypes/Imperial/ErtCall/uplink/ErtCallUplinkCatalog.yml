@@ -324,7 +324,7 @@
   description: ert-uplink-engineering-jawsoflife-desc
   productEntity: JawsOfLife
   cost:
-    BlueSpaceCube: 5
+    BlueSpaceCube: 4
   categories:
   - ERTUplinkEngineering
 
@@ -334,7 +334,7 @@
   description: ert-uplink-engineering-powerdrill-desc
   productEntity: PowerDrill
   cost:
-    BlueSpaceCube: 5
+    BlueSpaceCube: 4
   categories:
   - ERTUplinkEngineering
 
@@ -354,7 +354,7 @@
   description: ert-uplink-engineering-rcd-desc
   productEntity: RCD
   cost:
-    BlueSpaceCube: 8
+    BlueSpaceCube: 6
   categories:
   - ERTUplinkEngineering
 
@@ -563,12 +563,12 @@
   - ERTUplinkEngineering
 
 - type: listing
-  id: ErtCallUplinkWelderIndustrialAdvanced
-  name: ert-uplink-engineering-welderindustrialadvanced-name
-  description: ert-uplink-engineering-welderindustrialadvanced-desc
-  productEntity: WelderIndustrialAdvanced
+  id: ErtCallUplinkWelderExperimental
+  name: ert-uplink-engineering-welderexperimental-name
+  description: ert-uplink-engineering-welderexperimental-desc
+  productEntity: WelderExperimental
   cost:
-    BlueSpaceCube: 5
+    BlueSpaceCube: 4
   categories:
   - ERTUplinkEngineering
 
@@ -599,7 +599,7 @@
   description: ert-uplink-medical-hypospray-desc
   productEntity: Hypospray
   cost:
-    BlueSpaceCube: 7
+    BlueSpaceCube: 6
   categories:
   - ERTUplinkMedial
 
@@ -626,7 +626,7 @@
 - type: listing
   id: ErtCallUplinkOintment
   name: ert-uplink-medical-regenerativemesh-name
-  description: ert-uplink-medical-ointment-desc
+  description: ert-uplink-medical-regenerativemesh-desc
   productEntity: RegenerativeMesh
   cost:
     BlueSpaceCube: 1
@@ -683,20 +683,20 @@
   categories:
   - ERTUplinkMedial
 
- - type: listing
-   id: ErtCallUplinkPillAmbuzolPlus
-   name: ert-uplink-medical-pillambuzolplus-name
-   description: ert-uplink-medical-pillambuzolplus-desc
-   productEntity: PillAmbuzolPlus
-   cost:
-     BlueSpaceCube: 2
-   categories:
-   - ERTUplinkMedial
-   conditions:
-     - !type:StoreWhitelistCondition
-       whitelist:
-         tags:
-           - ErtUplinkCBURN
+- type: listing
+  id: ErtCallUplinkPillAmbuzolPlus
+  name: ert-uplink-medical-pillambuzolplus-name
+  description: ert-uplink-medical-pillambuzolplus-desc
+  productEntity: PillAmbuzolPlus
+  cost:
+   BlueSpaceCube: 2
+  categories:
+  - ERTUplinkMedial
+  conditions:
+   - !type:StoreWhitelistCondition
+     whitelist:
+       tags:
+         - ErtUplinkCBURN
 
 #TODO
 # - type: listing
@@ -912,20 +912,20 @@
 #         tags:
 #           - ErtUplinkCombat
 
- - type: listing
-   id: ErtCallUplinkWeaponAdvancedLaser
-   name: ert-uplink-weaponcombat-weaponadvancedlaser-name
-   description: ert-uplink-weaponcombat-weaponadvancedlaser-desc
-   productEntity: WeaponAdvancedLaser
-   cost:
-     BlueSpaceCube: 12
-   categories:
-   - ERTUplinkWeaponCombat
-   conditions:
-     - !type:StoreWhitelistCondition
-       whitelist:
-         tags:
-           - ErtUplinkCombat
+- type: listing
+  id: ErtCallUplinkWeaponAdvancedLaser
+  name: ert-uplink-weaponcombat-weaponadvancedlaser-name
+  description: ert-uplink-weaponcombat-weaponadvancedlaser-desc
+  productEntity: WeaponAdvancedLaser
+  cost:
+    BlueSpaceCube: 12
+  categories:
+  - ERTUplinkWeaponCombat
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - ErtUplinkCombat
 
 - type: listing
   id: ErtCallUplinkWeaponSniperHristov

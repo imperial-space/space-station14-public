@@ -104,8 +104,8 @@ ert-uplink-engineering-cableapcstack-name = { ent-CableApcStack }
 ert-uplink-engineering-cableapcstack-desc = { ent-CableApcStack.desc }
 ert-uplink-engineering-boxinflatable-name = { ent-BoxInflatable }
 ert-uplink-engineering-boxinflatable-desc = { ent-BoxInflatable.desc }
-ert-uplink-engineering-welderindustrialadvanced-name = { ent-WelderIndustrialAdvanced }
-ert-uplink-engineering-welderindustrialadvanced-desc = { ent-WelderIndustrialAdvanced.desc }
+ert-uplink-engineering-welderexperimental-name = { ent-WelderExperimental }
+ert-uplink-engineering-welderexperimental-desc = { ent-WelderExperimental.desc }
 ert-uplink-medical-omnizinechemistrybottle-name = { ent-OmnizineChemistryBottle }
 ert-uplink-medical-omnizinechemistrybottle-desc = { ent-OmnizineChemistryBottle.desc }
 ert-uplink-medical-thriveninchemistrybottle-name = { ent-ThriveninChemistryBottle }
@@ -130,6 +130,8 @@ ert-uplink-medical-materialbiomass-name = { ent-MaterialBiomass }
 ert-uplink-medical-materialbiomass-desc = { ent-MaterialBiomass.desc }
 ert-uplink-medical-spacemedipen-name = { ent-SpaceMedipen }
 ert-uplink-medical-spacemedipen-desc = { ent-SpaceMedipen.desc }
+ert-uplink-medical-pillambuzolplus-desc = { ent-PillAmbuzolPlus.desc }
+ert-uplink-medical-pillambuzolplus-name = { ent-PillAmbuzolPlus }
 
 ert-uplink-weaponnoncombat-weaponpulsepistol-name = { ent-WeaponPulsePistol }
 ert-uplink-weaponnoncombat-weaponpulsepistol-desc = { ent-WeaponPulsePistol.desc }
@@ -209,3 +211,6 @@ ert-uplink-utilities-cratemineshield-desc = { ent-ERTCallCrateMineShieldImplant.
 ent-ThriveninChemistryBottle = бутылочка трайвонина
     .desc = { ent-BaseChemistryEmptyBottle.desc }
     .suffix = { "" }
+
+ent-ClothingUniformJumpsuitCBURN = комбинезон РХБЗЗ
+    .desc = Комбинезон, который используют специальные подразделения для зачистки

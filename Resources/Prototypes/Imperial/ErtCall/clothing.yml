@@ -171,6 +171,17 @@
       shader: unshaded
       map: [ "light" ]
 
+- type: entity
+  parent: ClothingUniformJumpsuitERTLeader
+  id: ClothingUniformJumpsuitCBURN
+  name: ERT security uniform
+  description: A special suit made for the elite security under CentCom.
+  components:
+    - type: Sprite
+      sprite: Imperial/CBURN/Clothing/jumpsuit.rsi
+    - type: Clothing
+      sprite: Imperial/CBURN/Clothing/jumpsuit.rsi
+
 #CBURN END
 
 #DEAD SQUAD START
