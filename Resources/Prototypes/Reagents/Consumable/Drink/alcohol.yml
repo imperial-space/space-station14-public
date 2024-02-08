@@ -945,7 +945,7 @@
     state: icon_empty
   metamorphicMaxFillLevels: 3
   metamorphicFillBaseName: fill-
-  metamorphicChangeColor: true
+  metamorphicChangeColor: false
   metabolisms:
     Drink:
       effects:
@@ -1273,7 +1273,7 @@
     state: icon_empty
   metamorphicMaxFillLevels: 3
   metamorphicFillBaseName: fill-
-  metamorphicChangeColor: true
+  metamorphicChangeColor: false
   metabolisms:
     Drink:
       effects:
