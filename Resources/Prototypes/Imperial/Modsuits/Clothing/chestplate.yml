@@ -333,8 +333,8 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.7
-        Slash: 0.7
+        Blunt: 0.75
+        Slash: 0.75
         Cold: 0.8
         Piercing: 0.5
         Shock: 0.5
@@ -922,7 +922,7 @@
   - type: Clothing
     sprite: Imperial/Modsuits/Clothing/OuterClothing/nakamuraengineer.rsi
   - type: PressureProtection
-    highPressureMultiplier: 0.00000075
+    highPressureMultiplier: 0.000075
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.25
