@@ -1644,7 +1644,7 @@
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/whiterussianglass.rsi
     state: icon_empty
-  metamorphicMaxFillLevels: 5
+  metamorphicMaxFillLevels: 4
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
   metabolisms:
