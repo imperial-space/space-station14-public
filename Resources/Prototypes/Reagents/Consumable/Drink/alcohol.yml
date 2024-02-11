@@ -14,7 +14,7 @@
     state: icon_empty
   metamorphicMaxFillLevels: 5
   metamorphicFillBaseName: fill-
-  metamorphicChangeColor: true
+  metamorphicChangeColor: false
   metabolisms:
     Drink:
       effects:
@@ -47,7 +47,7 @@
   desc: reagent-desc-beer
   physicalDesc: reagent-physical-desc-bubbly
   flavor: beer
-  color: "#e3e77b"
+  color: "#cfa85f"
   recognizable: true
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/beerglass.rsi
@@ -93,7 +93,6 @@
     state: icon_empty
   metamorphicMaxFillLevels: 4
   metamorphicFillBaseName: fill-
-  metamorphicChangeColor: true
   metabolisms:
     Drink:
       effects:
@@ -113,10 +112,7 @@
   color: "#664300"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/rumglass.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 4
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
+    state: icon
   metabolisms:
     Drink:
       effects:
@@ -199,10 +195,7 @@
   recognizable: true
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/ginvodkaglass.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 4
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
+    state: icon
   metabolisms:
     Drink:
       effects:
@@ -222,10 +215,7 @@
   color: "#664300"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/coffeeliqueurglass.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 3
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: true
+    state: icon
 
 - type: reagent
   id: MelonLiquor
@@ -252,10 +242,7 @@
   color: "#7E4043"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/wineglass.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 5
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: true
+    state: icon
 
 - type: reagent
   id: PoisonWine
@@ -264,13 +251,10 @@
   desc: reagent-desc-poison-wine
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: bitter
-  color: "#990066"
+  color: "#000000"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/pwineglass.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 5
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: true
+    state: icon
   metabolisms:
     Drink:
       effects:
@@ -297,10 +281,7 @@
   recognizable: true
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/rumglass.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 4
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
+    state: icon
   metabolisms:
     Drink:
       effects:
@@ -368,10 +349,7 @@
   recognizable: true
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/ginvodkaglass.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 4
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
+    state: icon
   metabolisms:
     Drink:
       effects:
@@ -416,10 +394,7 @@
   recognizable: true
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/wineglass.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 5
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: true
+    state: icon
 
 - type: reagent
   id: Champagne
@@ -432,10 +407,7 @@
   recognizable: true
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/champagneglass.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 4
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: true
+    state: icon
   metabolisms:
     Drink:
       effects:
@@ -631,7 +603,7 @@
   desc: reagent-desc-barefoot
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: alcohol
-  color: "#ff66cc"
+  color: "#664300"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/b&p.rsi
     state: icon_empty
@@ -672,10 +644,7 @@
   color: "#360000"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/blackrussianglass.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 4
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
+    state: icon
   metabolisms:
     Drink:
       effects:
@@ -692,7 +661,7 @@
   desc: reagent-desc-bloody-mary
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: bloodymary
-  color: "#df6a50"
+  color: "#660000"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/bloodymaryglass.rsi
     state: icon_empty
@@ -707,7 +676,7 @@
   desc: reagent-desc-booger
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: alcohol
-  color: "#99ff00"
+  color: "#8CFF8C"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/booger.rsi
     state: icon_empty
@@ -726,7 +695,7 @@
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/bravebullglass.rsi
     state: icon_empty
-  metamorphicMaxFillLevels: 5
+  metamorphicMaxFillLevels: 4
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
   metabolisms:
@@ -774,7 +743,7 @@
     state: icon_empty
   metamorphicMaxFillLevels: 4
   metamorphicFillBaseName: fill-
-  metamorphicChangeColor: true
+  metamorphicChangeColor: false
 
 - type: reagent
   id: DevilsKiss
@@ -783,13 +752,13 @@
   desc: reagent-desc-devils-kiss
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: alcohol
-  color: "#ff0033"
+  color: "#A68310"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/devilskiss.rsi
     state: icon_empty
   metamorphicMaxFillLevels: 3
   metamorphicFillBaseName: fill-
-  metamorphicChangeColor: true
+  metamorphicChangeColor: false
 
 - type: reagent
   id: DoctorsDelight
@@ -855,13 +824,13 @@
   desc: reagent-desc-erika-surprise
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: alcohol
-  color: "#67bc50"
+  color: "#2E6671"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/beerstein.rsi
+    sprite: Objects/Consumable/Drinks/erikasurprise.rsi
     state: icon_empty
   metamorphicMaxFillLevels: 5
   metamorphicFillBaseName: fill-
-  metamorphicChangeColor: true
+  metamorphicChangeColor: false
 
 - type: reagent
   id: GargleBlaster
@@ -962,13 +931,10 @@
   desc: reagent-desc-grog
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: alcohol
-  color: "#e3e77b"
+  color: "#664300"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/beerstein.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 5
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: true
+    sprite: Objects/Consumable/Drinks/grogglass.rsi
+    state: icon
 
 - type: reagent
   id: HippiesDelight
@@ -980,10 +946,7 @@
   color: "#6eaa0c"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/hippiesdelightglass.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 6
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
+    state: icon
 
 - type: reagent
   id: Hooch
@@ -993,6 +956,9 @@
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: alcohol
   color: "#664e00"
+  metamorphicSprite:
+    sprite: Objects/Consumable/Drinks/glass_brown2.rsi
+    state: icon
 
 - type: reagent
   id: IcedBeer
@@ -1004,10 +970,7 @@
   color: "#664300"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/iced_beerglass.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 6
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
+    state: icon
 
 - type: reagent
   id: IrishCarBomb
@@ -1019,10 +982,7 @@
   color: "#2E6671"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/irishcarbomb.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 6
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
+    state: icon
   metabolisms:
     Drink:
       effects:
@@ -1042,10 +1002,7 @@
   color: "#664300"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/irishcreamglass.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 4
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
+    state: icon
   metabolisms:
     Drink:
       effects:
@@ -1065,10 +1022,7 @@
   color: "#664300"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/irishcoffeeglass.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 3
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
+    state: icon
   metabolisms:
     Drink:
       effects:
@@ -1088,10 +1042,7 @@
   color: "#664300"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/longislandicedteaglass.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 6
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
+    state: icon
   metabolisms:
     Drink:
       effects:
@@ -1141,10 +1092,7 @@
   color: "#664300"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/manlydorfglass.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 2
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
+    state: icon
 
 - type: reagent
   id: Margarita
@@ -1156,10 +1104,7 @@
   color: "#8CFF8C"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/margaritaglass.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 4
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: true
+    state: icon
 
 - type: reagent
   id: Martini
@@ -1193,11 +1138,8 @@
   flavor: mead
   color: "#664300"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/beerstein.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 5
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: true
+    sprite: Objects/Consumable/Drinks/meadglass.rsi
+    state: icon
 
 - type: reagent
   id: Mojito
@@ -1206,13 +1148,10 @@
   desc: reagent-desc-mojito
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: alcohol
-  color: "#3ea99888"
+  color: "#664300"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/mojito.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 6
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
+    state: icon
 
 - type: reagent
   id: Moonshine
@@ -1241,10 +1180,7 @@
   color: "#2E2E61"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/neurotoxinglass.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 5
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
+    state: icon
   metabolisms:
     Drink:
       effects:
@@ -1290,13 +1226,10 @@
   desc: reagent-desc-red-mead
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: alcohol
-  color: "#bc5550"
+  color: "#C73C00"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/beerstein.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 5
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: true
+    sprite: Objects/Consumable/Drinks/red_meadglass.rsi
+    state: icon
 
 - type: reagent
   id: Sbiten
@@ -1308,10 +1241,7 @@
   color: "#004166"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/sbitenglass.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 5
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: true
+    state: icon
 
 - type: reagent
   id: ScrewdriverCocktail
@@ -1323,10 +1253,7 @@
   color: "#A68310"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/screwdriverglass.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 6
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
+    state: icon
   metabolisms:
     Drink:
       effects:
@@ -1346,10 +1273,7 @@
   color: "#B5A642"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/cogchamp.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 3
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
+    state: icon
   metabolisms:
     Drink:
       effects:
@@ -1369,13 +1293,10 @@
   desc: reagent-desc-silencer
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: nothing
-  color: "#878787"
+  color: "#004666"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/silencerglass.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 6
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
+    state: icon
   metabolisms:
     Drink:
       effects:
@@ -1395,10 +1316,7 @@
   color: "#3b0c0c"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/singulo.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 5
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
+    state: icon
 
 - type: reagent
   id: SnowWhite
@@ -1410,10 +1328,7 @@
   color: "#FFFFFF"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/snowwhite.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 6
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: true
+    state: icon
 
 - type: reagent
   id: SuiDream
@@ -1425,10 +1340,7 @@
   color: "#00A86B"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/sdreamglass.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 5
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
+    state: icon
 
 - type: reagent
   id: SyndicateBomb
@@ -1437,13 +1349,10 @@
   desc: reagent-desc-syndicate-bomb
   physicalDesc: reagent-physical-desc-opaque
   flavor: syndiebomb
-  color: "#e3e77b"
+  color: "#2E6660"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/syndicatebomb.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 6
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: true
+    state: icon
 
 - type: reagent
   id: TequilaSunrise
@@ -1455,10 +1364,7 @@
   color: "#FFE48C"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/tequillasunriseglass.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 5
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
+    state: icon
   metabolisms:
     Drink:
       effects:
@@ -1478,10 +1384,7 @@
   color: "#75b1f0"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/the_martinez.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 3
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
+    state: icon
 
 - type: reagent
   id: ThreeMileIsland
@@ -1493,10 +1396,7 @@
   color: "#666340"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/threemileislandglass.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 2
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
+    state: icon
   metabolisms:
     Drink:
       effects:
@@ -1519,10 +1419,7 @@
   color: "#665c00"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/toxinsspecialglass.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 4
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
+    state: icon
 
 - type: reagent
   id: VodkaMartini
@@ -1556,11 +1453,8 @@
   flavor: alcohol
   color: "#0064C8"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/gintonicglass.rsi # they look the same
-    state: icon_empty
-  metamorphicMaxFillLevels: 6
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
+    sprite: Objects/Consumable/Drinks/vodkatonicglass.rsi
+    state: icon
   metabolisms:
     Drink:
       effects:
