@@ -13,11 +13,11 @@
     - type: GhostRoleMobSpawner
       prototype: ERTLeaderEVAPresetAlternative
     - type: Sprite
-      sprite: Markers/jobs.rsi
+      sprite: Imperial/ErtCall/alter_ert_markers.rsi
       layers:
         - state: green
-        - sprite: Markers/jobs.rsi
-          state: ertleadereva
+        - sprite: Imperial/ErtCall/alter_ert_markers.rsi
+          state: alterertcmd
 
 #Medic
 - type: entity
@@ -34,11 +34,11 @@
     - type: GhostRoleMobSpawner
       prototype: ERTMedicEVAPresetAlternative
     - type: Sprite
-      sprite: Markers/jobs.rsi
+      sprite: Imperial/ErtCall/alter_ert_markers.rsi
       layers:
         - state: green
-        - sprite: Markers/jobs.rsi
-          state: ertmedicaleva
+        - sprite: Imperial/ErtCall/alter_ert_markers.rsi
+          state: alterertmed
 
 #Security
 - type: entity
@@ -55,11 +55,11 @@
     - type: GhostRoleMobSpawner
       prototype: ERTSecurityEVAPresetAlternative
     - type: Sprite
-      sprite: Markers/jobs.rsi
+      sprite: Imperial/ErtCall/alter_ert_markers.rsi
       layers:
         - state: green
-        - sprite: Markers/jobs.rsi
-          state: ertsecurityeva
+        - sprite: Imperial/ErtCall/alter_ert_markers.rsi
+          state: alterertsec
 
 #Engineer
 - type: entity
@@ -76,11 +76,11 @@
     - type: GhostRoleMobSpawner
       prototype: ERTEngineerEVAPresetAlternative
     - type: Sprite
-      sprite: Markers/jobs.rsi
+      sprite: Imperial/ErtCall/alter_ert_markers.rsi
       layers:
         - state: green
-        - sprite: Markers/jobs.rsi
-          state: ertengineereva
+        - sprite: Imperial/ErtCall/alter_ert_markers.rsi
+          state: alterertengi
 
 #Junitor
 - type: entity
@@ -97,8 +97,8 @@
     - type: GhostRoleMobSpawner
       prototype: ERTJanitorEVAPresetAlternative
     - type: Sprite
-      sprite: Markers/jobs.rsi
+      sprite: Imperial/ErtCall/alter_ert_markers.rsi
       layers:
         - state: green
-        - sprite: Markers/jobs.rsi
-          state: ertjanitoreva
+        - sprite: Imperial/ErtCall/alter_ert_markers.rsi
+          state: alterertjani
