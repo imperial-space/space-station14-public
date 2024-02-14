@@ -33,6 +33,9 @@
         Stamina: 0.85
   - type: ExplosionResistance
     damageCoefficient: 0.5
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
 
 - type: entity
   parent: ClothingUniformBase
@@ -45,8 +48,18 @@
     sprite: Imperial/SST/Clothing/Uniforms/cybersun.rsi
 
 - type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCSOCybersun
+  name: cargo tech jumpsuit
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/Uniforms/cybersun_exec_m.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/Uniforms/cybersun_exec_m.rsi
+
+- type: entity
   parent: ClothingMaskPullableBase
-  id: ClothingMaskCybersun
+  id: ClothingMaskCybersunWhiteBalaclava
   name: security gas mask
   description: A standard issue Security gas mask.
   components:
@@ -57,5 +70,5 @@
   - type: Armor
     modifiers:
       coefficients:
-        Heat: 0.9
-        Caustic: 0.3
+        Cold: 0.9
+        Caustic: 0.9
