@@ -1,0 +1,12 @@
+- type: entity
+  parent: BaseItem
+  id: AnimatedAsh
+  name: Ash
+  description: Мобильный труп.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/heatdeath.rsi
+    state: heatdeath
+  - type: Item
+    sprite: Objects/Misc/heatdeath.rsi
+    state: heatdeath
