@@ -2,7 +2,7 @@
   parent: BaseItem
   id: AnimatedAsh
   name: Ash
-  description: Мобильный труп.
+  description: a mobile corpse.
   components:
   - type: Sprite
     sprite: Objects/Misc/heatdeath.rsi
