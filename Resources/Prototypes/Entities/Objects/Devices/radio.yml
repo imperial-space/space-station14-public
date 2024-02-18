@@ -4,6 +4,7 @@
   parent: BaseItem
   id: RadioHandheld
   components:
+  - type: Frequency
   - type: RadioMicrophone
     broadcastChannel: Handheld
   - type: RadioSpeaker
