@@ -53,14 +53,15 @@ public sealed partial class ContainmentFieldGeneratorComponent : Component
     /// How many seconds should the generators wait before losing power?
     /// </summary>
     [DataField("threshold")]
-    public int Threshold = 20;
+    public float Threshold = 20f;
 
     /// <summary>
     /// How many tiles should this field check before giving up?
+    /// For the possibility of use as ship shields. <ImperialSpace>
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField("maxLength")]
-    public int MaxLength = 8;
+    public float MaxLength = 8f;
 
     /// <summary>
     /// What collision should power this generator?
