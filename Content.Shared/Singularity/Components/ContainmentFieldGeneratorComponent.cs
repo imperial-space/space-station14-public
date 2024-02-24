@@ -53,13 +53,14 @@ public sealed partial class ContainmentFieldGeneratorComponent : Component
     /// How many seconds should the generators wait before losing power?
     /// </summary>
     [DataField("threshold")]
-    public float Threshold = 20f;
+    public int Threshold = 20;
 
     /// <summary>
     /// How many tiles should this field check before giving up?
     /// </summary>
+    [ViewVariables(VVAccess.ReadWrite)]
     [DataField("maxLength")]
-    public float MaxLength = 8F;
+    public int MaxLength = 8;
 
     /// <summary>
     /// What collision should power this generator?
