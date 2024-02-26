@@ -207,3 +207,31 @@
   sprite:
     sprite: Imperial/HephaestusStation/Decals/trimline.rsi
     state: fill_line_w
+
+- type: decal
+  id: TrimLineFillImperialInnerNe
+  tags: ["station"]
+  sprite:
+    sprite: Imperial/HephaestusStation/Decals/trimline.rsi
+    state: fill_inner_ne
+
+- type: decal
+  id: TrimLineFillImperialInnerSe
+  tags: ["station"]
+  sprite:
+    sprite: Imperial/HephaestusStation/Decals/trimline.rsi
+    state: fill_inner_se
+
+- type: decal
+  id: TrimLineFillImperialInnerNw
+  tags: ["station"]
+  sprite:
+    sprite: Imperial/HephaestusStation/Decals/trimline.rsi
+    state: fill_inner_nw
+
+- type: decal
+  id: TrimLineFillImperialInnerSw
+  tags: ["station"]
+  sprite:
+    sprite: Imperial/HephaestusStation/Decals/trimline.rsi
+    state: fill_inner_sw

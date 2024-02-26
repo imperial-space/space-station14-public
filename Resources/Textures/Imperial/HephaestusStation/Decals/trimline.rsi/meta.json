@@ -96,6 +96,18 @@
         },
         {
             "name": "fill_line_w"
+        },
+        {
+            "name": "fill_inner_ne"
+        },
+        {
+            "name": "fill_inner_se"
+        },
+        {
+            "name": "fill_inner_nw"
+        },
+        {
+            "name": "fill_inner_sw"
         }
     ]
 }
