@@ -13,11 +13,11 @@
     - type: GhostRoleMobSpawner
       prototype: ERTLeaderEVAPresetAlternative
     - type: Sprite
-      sprite: Imperial/ErtCall/alter_ert_markers.rsi
+      sprite: Markers/jobs.rsi
       layers:
         - state: green
-        - sprite: Imperial/ErtCall/alter_ert_markers.rsi
-          state: alterertcmd
+        - sprite: Markers/jobs.rsi
+          state: ertleadereva
 
 #Medic
 - type: entity
@@ -34,11 +34,11 @@
     - type: GhostRoleMobSpawner
       prototype: ERTMedicEVAPresetAlternative
     - type: Sprite
-      sprite: Imperial/ErtCall/alter_ert_markers.rsi
+      sprite: Markers/jobs.rsi
       layers:
         - state: green
-        - sprite: Imperial/ErtCall/alter_ert_markers.rsi
-          state: alterertmed
+        - sprite: Markers/jobs.rsi
+          state: ertmedicaleva
 
 #Security
 - type: entity
@@ -55,11 +55,11 @@
     - type: GhostRoleMobSpawner
       prototype: ERTSecurityEVAPresetAlternative
     - type: Sprite
-      sprite: Imperial/ErtCall/alter_ert_markers.rsi
+      sprite: Markers/jobs.rsi
       layers:
         - state: green
-        - sprite: Imperial/ErtCall/alter_ert_markers.rsi
-          state: alterertsec
+        - sprite: Markers/jobs.rsi
+          state: ertsecurityeva
 
 #Engineer
 - type: entity
@@ -76,11 +76,11 @@
     - type: GhostRoleMobSpawner
       prototype: ERTEngineerEVAPresetAlternative
     - type: Sprite
-      sprite: Imperial/ErtCall/alter_ert_markers.rsi
+      sprite: Markers/jobs.rsi
       layers:
         - state: green
-        - sprite: Imperial/ErtCall/alter_ert_markers.rsi
-          state: alterertengi
+        - sprite: Markers/jobs.rsi
+          state: ertengineereva
 
 #Junitor
 - type: entity
@@ -97,8 +97,8 @@
     - type: GhostRoleMobSpawner
       prototype: ERTJanitorEVAPresetAlternative
     - type: Sprite
-      sprite: Imperial/ErtCall/alter_ert_markers.rsi
+      sprite: Markers/jobs.rsi
       layers:
         - state: green
-        - sprite: Imperial/ErtCall/alter_ert_markers.rsi
-          state: alterertjani
+        - sprite: Markers/jobs.rsi
+          state: ertjanitoreva

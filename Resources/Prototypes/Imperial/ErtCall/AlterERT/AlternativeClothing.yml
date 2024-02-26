@@ -99,7 +99,7 @@
     - type: Clothing
       sprite: Imperial/Clothing/Head/Hardsuits/ertengineer.rsi
     - type: PointLight
-      color: "#addbff"
+      color: "#f4ffad"
     - type: Armor
       modifiers:
         coefficients:
@@ -120,7 +120,7 @@
     - type: Clothing
       sprite: Imperial/Clothing/Head/Hardsuits/ertmedical.rsi
     - type: PointLight
-      color: "#addbff"
+      color: "#adffec"
 
 #ERT Security Hardsuit
 - type: entity
@@ -134,7 +134,7 @@
     - type: Clothing
       sprite: Imperial/Clothing/Head/Hardsuits/ertsecurity.rsi
     - type: PointLight
-      color: "#addbff"
+      color: "#ffadc6"
     - type: Armor
       modifiers:
         coefficients:
@@ -155,4 +155,4 @@
     - type: Clothing
       sprite: Imperial/Clothing/Head/Hardsuits/ertjanitor.rsi
     - type: PointLight
-      color: "#addbff"
+      color: "#cbadff"
