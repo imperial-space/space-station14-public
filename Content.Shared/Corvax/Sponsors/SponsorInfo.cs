@@ -43,7 +43,8 @@ public sealed class MsgSponsorInfo : NetMessage
         buffer.ReadPadBits();
         if (!isSponsor) return;
         var length = buffer.ReadVariableInt32();
-        using var stream = buffer.ReadAlignedMemory(length);
+        using var stream = new MemoryStream(length);
+        buffer.ReadAlignedMemory(stream, length);
         serializer.DeserializeDirect(stream, out Info);
     }
 
