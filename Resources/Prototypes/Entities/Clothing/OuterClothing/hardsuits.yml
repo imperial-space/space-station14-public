@@ -210,6 +210,7 @@
         Slash: 0.6
         Piercing: 0.6
         Caustic: 0.7
+        Stamina: 0.85 # Stamina resistance
   - type: ClothingSpeedModifier
     walkModifier: 0.75
     sprintModifier: 0.75
@@ -237,9 +238,10 @@
         Blunt: 0.8
         Slash: 0.8
         Piercing: 0.7
+        Stamina: 0.85 # Stamina resistance
   - type: ClothingSpeedModifier
-    walkModifier: 0.65
-    sprintModifier: 0.65
+    walkModifier: 0.80 ## Imperial rebalance
+    sprintModifier: 0.80 ## Imperial rebalance
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitBrigmedic
@@ -267,6 +269,7 @@
         Slash: 0.6
         Piercing: 0.6
         Caustic: 0.7
+        Stamina: 0.75 # Stamina resistance
   - type: ClothingSpeedModifier
     walkModifier: 0.7
     sprintModifier: 0.7
@@ -299,6 +302,7 @@
         Heat: 0.5
         Radiation: 0.5
         Caustic: 0.6
+        Stamina: 0.85 # Stamina resistance
   - type: ClothingSpeedModifier
     walkModifier: 0.8
     sprintModifier: 0.8
@@ -331,6 +335,7 @@
         Heat: 0.4
         Radiation: 0.0
         Caustic: 0.7
+        Stamina: 0.85 # Stamina resistance
   - type: ClothingSpeedModifier
     walkModifier: 0.75
     sprintModifier: 0.8
@@ -356,6 +361,7 @@
     modifiers:
       coefficients:
         Caustic: 0.1
+        Stamina: 0.85 # Stamina resistance
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.95
@@ -386,6 +392,7 @@
         Heat: 0.3
         Radiation: 0.1
         Caustic: 0.2
+        Stamina: 0.85 # Stamina resistance
   - type: ExplosionResistance
     damageCoefficient: 0.1
   - type: ClothingSpeedModifier
@@ -429,6 +436,7 @@
         Piercing: 0.5
         Radiation: 0.5
         Caustic: 0.6
+        Stamina: 0.75 # Stamina resistance
   - type: ClothingSpeedModifier
     walkModifier: 0.8
     sprintModifier: 0.8
@@ -495,6 +503,7 @@
         Heat: 0.5
         Radiation: 0.5
         Caustic: 0.5
+        Stamina: 0.6 ## Stamina resistance
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
@@ -543,6 +552,7 @@
         Heat: 0.2
         Radiation: 0.01
         Caustic: 0.5
+        Stamina: 0.5 ## Stamina resistance
   - type: Item
     size: Huge
   - type: ClothingSpeedModifier
@@ -577,6 +587,7 @@
         Heat: 0.5
         Radiation: 0.25
         Caustic: 0.4
+        Stamina: 0.5 ## Stamina resistance
   - type: ClothingSpeedModifier
     walkModifier: 1.0
     sprintModifier: 1.0
@@ -609,6 +620,7 @@
         Heat: 0.2
         Radiation: 0.2
         Caustic: 0.2
+        Stamina: 0.4 ## Stamina resistance
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.65

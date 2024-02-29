@@ -4,17 +4,22 @@
   description: job-description-atmostech
   playTimeTracker: JobAtmosphericTechnician
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: Engineering
-      time: 54000 # 15 hrs
+    - !type:RoleTimeRequirement
+      role: JobStationEngineer
+      time: 14400 #Imperial role timers
   startingGear: AtmosphericTechnicianGear
   icon: "JobIconAtmosphericTechnician"
   supervisors: job-supervisors-ce
+  #antagAdvantage: 10
+  canBeAntag: false
   access:
   - Maintenance
   - Engineering
   - External
   - Atmospherics
+  special: ##Imperial start
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ] ##Imperial end
 
 - type: startingGear
   id: AtmosphericTechnicianGear

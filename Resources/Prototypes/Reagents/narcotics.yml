@@ -8,6 +8,7 @@
   color: "#FAFAFA"
   boilingPoint: 212.0  # Dexosyephedrine vape when?
   meltingPoint: 170.0
+  pricePerUnit: 3 #imperial
   metabolisms:
     Poison:
       effects:
@@ -57,6 +58,7 @@
   color: "#D2FFFA"
   boilingPoint: 255.0
   meltingPoint: 36.0
+  pricePerUnit: 2 #imperial
   metabolisms:
     Narcotic:
       effects:
@@ -102,6 +104,7 @@
   color: "#9A040E"
   boilingPoint: 212.0
   meltingPoint: 170.0
+  pricePerUnit: 1 #imperial
   metabolisms:
     Narcotic:
       metabolismRate: 1.0
@@ -161,9 +164,16 @@
     amount: -5
   - !type:PlantAdjustHealth
     amount: -1
+  pricePerUnit: 2 #imperial
   metabolisms:
     Narcotic:
       effects:
+      - !type:HealPsychosis # psychosis
+        reagent: THK
+        stage: 2
+        conditions: # psychosis
+        - !type:ReagentThreshold # psychosis
+          min: 10 # psychosis
       - !type:GenericStatusEffect
         key: SeeingRainbows
         component: SeeingRainbows
@@ -180,9 +190,16 @@
   flavor: bitter
   flavorMinimum: 0.05
   color: "#DAA520"
+  pricePerUnit: 1 #imperial
   metabolisms:
     Narcotic:
       effects:
+      - !type:HealPsychosis # psychosis
+        reagent: THK
+        stage: 2
+        conditions: # psychosis
+        - !type:ReagentThreshold # psychosis
+          min: 10 # psychosis
       - !type:GenericStatusEffect
         key: SeeingRainbows
         component: SeeingRainbows
@@ -197,7 +214,14 @@
   desc: reagent-desc-nicotine
   flavor: bitter
   color: "#C0C0C0"
+  pricePerUnit: 1 #imperial
   physicalDesc: reagent-physical-desc-strong-smelling
+  metabolisms: # psychosis
+    Narcotic: # psychosis
+      effects: # psychosis
+        - !type:HealPsychosis # psychosis
+          reagent: Nicotine # psychosis
+          stage: 1 # psychosis
   plantMetabolism:
   - !type:PlantAdjustHealth
     amount: -5
@@ -211,6 +235,7 @@
   physicalDesc: reagent-physical-desc-acrid
   flavor: bitter
   color: "#215263"
+  pricePerUnit: 1 #imperial
   metabolisms:
     Narcotic:
       effects:
@@ -240,6 +265,7 @@
   physicalDesc: reagent-physical-desc-syrupy
   flavor: bitter
   color: "#63806e"
+  pricePerUnit: 1 #imperial
   metabolisms:
     Narcotic:
       effects:
@@ -278,6 +304,7 @@
   color: "#128e80"
   boilingPoint: 444.0
   meltingPoint: 128.0
+  pricePerUnit: 3 #imperial
   metabolisms:
     Narcotic:
       effects:
@@ -300,6 +327,7 @@
   color: "#000000"
   boilingPoint: 255.0
   meltingPoint: 36.0
+  pricePerUnit: 5 #imperial
   metabolisms:
     Narcotic:
       effects:
@@ -317,6 +345,7 @@
   color: "#96a8b5"
   boilingPoint: 255.0
   meltingPoint: 36.0
+  pricePerUnit: 5 #imperial
   metabolisms:
     Narcotic:
       effects:

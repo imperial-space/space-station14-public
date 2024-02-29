@@ -3,18 +3,18 @@
   name: job-name-paramedic
   description: job-description-paramedic
   playTimeTracker: JobParamedic
+  psychosisGainResist: 0.7 # psychosis
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobMedicalDoctor
-      time: 14400 #4 hrs
-    - !type:OverallPlaytimeRequirement
-      time: 54000 # 15 hrs
+    - !type:DepartmentTimeRequirement
+      department: Medical
+      time: 18000 #Imperial role timers
   startingGear: ParamedicGear
   icon: "JobIconParamedic"
   supervisors: job-supervisors-cmo
   access:
   - Medical
   - Maintenance
+  - External
   extendedAccess:
   - Chemistry
 
@@ -22,11 +22,11 @@
   id: ParamedicGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitParamedic
-    back: ClothingBackpackParamedicFilled
-    shoes: ClothingShoesColorBlue
+    back: ClothingBackpackMedicalFilled
+    shoes: ClothingShoesColorWhite
     id: ParamedicPDA
     ears: ClothingHeadsetMedical
-    belt: ClothingBeltMedicalEMTFilled
+    belt: ClothingBeltParamedicFilled
   innerClothingSkirt: ClothingUniformJumpskirtParamedic
-  satchel: ClothingBackpackSatchelParamedicFilled
-  duffelbag: ClothingBackpackDuffelParamedicFilled
+  satchel: ClothingBackpackSatchelMedicalFilled
+  duffelbag: ClothingBackpackDuffelMedicalFilled

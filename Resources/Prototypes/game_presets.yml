@@ -3,7 +3,7 @@
   alias:
     - survival
   name: survival-title
-  showInVote: false # secret
+  showInVote: true # secret # imperial add-on
   description: survival-description
   rules:
     - RampingStationEventScheduler
@@ -27,7 +27,7 @@
   - extended
   - shittersafari
   name: extended-title
-  showInVote: false #2boring2vote
+  showInVote: true #2boring2vote # imperial add-on
   description: extended-description
   rules:
   - BasicStationEventScheduler
@@ -90,7 +90,7 @@
     - traitor
   name: traitor-title
   description: traitor-description
-  showInVote: false
+  showInVote: true # imperial add-on
   rules:
     - Traitor
     - BasicStationEventScheduler
@@ -115,7 +115,7 @@
     - nukeops
   name: nukeops-title
   description: nukeops-description
-  showInVote: false
+  showInVote: true # imperial add-on
   rules:
     - Nukeops
     - BasicStationEventScheduler
@@ -145,7 +145,7 @@
   - zomber
   name: zombie-title
   description: zombie-description
-  showInVote: false
+  showInVote: true # imperial add-on
   rules:
   - Zombie
   - BasicStationEventScheduler
@@ -157,8 +157,18 @@
     - pirates
   name: pirates-title
   description: pirates-description
-  showInVote: false
+  showInVote: true # imperial add-on
   rules:
     - Pirates
     - BasicStationEventScheduler
     - BasicRoundstartVariation
+
+# imperial add-on begin
+- type: gamePreset
+  id: PeaceAndTranquility
+  alias:
+    - Peace
+  name: peace-and-tranquility-title
+  description: peace-and-tranquility-desc
+  showInVote: true
+# imperial add-on end

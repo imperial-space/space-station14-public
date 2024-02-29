@@ -10,6 +10,12 @@
   metabolisms:
     Drink:
       effects:
+      - !type:HealPsychosis # psychosis
+        reagent: Coffee # psychosis
+        stage: 1 # psychosis
+        conditions: # psychosis
+        - !type:ReagentThreshold # psychosis
+          min: 1 # psychosis
       - !type:SatiateThirst
         factor: 2
       - !type:AdjustReagent
@@ -74,6 +80,15 @@
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/glass_green.rsi
     state: icon_empty
+  metabolisms: # psychosis
+    Drink: # psychosis
+      effects: # psychosis
+      - !type:HealPsychosis # psychosis
+        reagent: Tea # psychosis
+        stage: 1 # psychosis
+        conditions: # psychosis
+        - !type:ReagentThreshold # psychosis
+          min: 1 # psychosis
   metamorphicMaxFillLevels: 5
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false

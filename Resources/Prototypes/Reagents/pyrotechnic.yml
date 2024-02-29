@@ -15,6 +15,7 @@
 
 - type: reagent
   id: Thermite
+  pricePerUnit: 1 #imperial
   name: reagent-name-thermite
   parent: BasePyrotechnic
   desc: reagent-desc-thermite
@@ -43,6 +44,7 @@
   physicalDesc: reagent-physical-desc-soapy
   flavor: bitter
   color: "#FA00AF"
+  pricePerUnit: 1.25 #imperial
   tileReactions:
   - !type:FlammableTileReaction
     temperatureMultiplier: 5
@@ -72,6 +74,7 @@
   physicalDesc: reagent-physical-desc-burning
   flavor: bitter
   color: "#D4872A"
+  pricePerUnit: 2.75 #imperial
   metabolisms:
     Poison:
       effects:
@@ -100,6 +103,7 @@
   physicalDesc: reagent-physical-desc-blazing
   flavor: bitter
   color: "#FFC8C8"
+  pricePerUnit: 2.5 #imperial
   tileReactions:
   - !type:PryTileReaction
   metabolisms:
@@ -141,6 +145,7 @@
   color: "#215263"
   boilingPoint: 418.0 # I went with ammonium lauryl sulfate as the basis for this
   meltingPoint: 7.4 # I made this up
+  pricePerUnit: 1 #imperial
 
 - type: reagent
   id: WeldingFuel
@@ -177,3 +182,4 @@
   color: "#9e6b38"
   boilingPoint: 190.0 # Perfluorooctanoic Acid.
   meltingPoint: 45.0
+  pricePerUnit: 1 #imperial

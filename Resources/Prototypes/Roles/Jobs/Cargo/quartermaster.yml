@@ -3,18 +3,14 @@
   name: job-name-qm
   description: job-description-qm
   playTimeTracker: JobQuartermaster
+  psychosisGainResist: 0.6 # psychosis
   requirements:
     - !type:RoleTimeRequirement
-      role: JobCargoTechnician
-      time: 21600 #6 hrs
-    - !type:RoleTimeRequirement
       role: JobSalvageSpecialist
-      time: 10800 #3 hrs
+      time: 3600 #Imperial role timers
     - !type:DepartmentTimeRequirement
       department: Cargo
-      time: 36000 #10 hours
-    - !type:OverallPlaytimeRequirement
-      time: 144000 #40 hrs
+      time: 21600 #Imperial role timers
   weight: 10
   startingGear: QuartermasterGear
   icon: "JobIconQuarterMaster"
@@ -25,8 +21,8 @@
   - Salvage
   - Quartermaster
   - Maintenance
+  - External
   - Command
-  - Brig
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]

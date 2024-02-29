@@ -221,6 +221,7 @@
     - CanPilot
     - FootstepSound
     - DoorBumpOpener
+  - type: PsychosisGain # psychosis
 
 - type: entity
   save: false

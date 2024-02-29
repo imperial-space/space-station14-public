@@ -3,12 +3,14 @@
   name: job-name-rd
   description: job-description-rd
   playTimeTracker: JobResearchDirector
+  psychosisGainResist: 0.6 # psychosis
   requirements:
     - !type:DepartmentTimeRequirement
       department: Science
-      time: 36000 #10 hrs
-    - !type:OverallPlaytimeRequirement
-      time: 144000 #40 hrs
+      time: 21600 #Imperial role timers
+    - !type:RoleTimeRequirement
+      role: JobScientist
+      time: 10800 #Imperial role timers
   weight: 10
   startingGear: ResearchDirectorGear
   icon: "JobIconResearchDirector"
@@ -20,7 +22,6 @@
   - Command
   - Maintenance
   - ResearchDirector
-  - Brig
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]

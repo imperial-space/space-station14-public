@@ -5,6 +5,7 @@
   desc: reagent-desc-toxin
   flavor: bitter
   color: "#cf3600"
+  pricePerUnit: 1 #imperial
   physicalDesc: reagent-physical-desc-opaque
   plantMetabolism:
   - !type:PlantAdjustToxins
@@ -26,6 +27,7 @@
   desc: reagent-desc-carpotoxin
   flavor: bitter
   color: "#e2a38c"
+  pricePerUnit: 5 #imperial
   physicalDesc: reagent-physical-desc-exotic-smelling
   plantMetabolism:
   - !type:PlantAdjustToxins
@@ -52,10 +54,17 @@
   desc: reagent-desc-chloral-hydrate
   flavor: bitter
   color: "#000067"
+  pricePerUnit: 1 #imperial
   physicalDesc: reagent-physical-desc-nondescript
   metabolisms:
     Poison:
       effects:
+      - !type:HealPsychosis # psychosis
+        reagent: Chlor # psychosis
+        stage: 2 # psychosis
+        conditions: # psychosis
+        - !type:ReagentThreshold # psychosis
+          min: 9 # psychosis
       - !type:MovespeedModifier
         walkSpeedModifier: 0.65
         sprintSpeedModifier: 0.65
@@ -105,6 +114,7 @@
   desc: reagent-desc-mold
   flavor: bitter
   color: "#8a9a5b"
+  pricePerUnit: 1 #imperial
   recognizable: true
   physicalDesc: reagent-physical-desc-fuzzy
   metabolisms:
@@ -123,6 +133,7 @@
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: acid
   color: "#a1000b"
+  pricePerUnit: 1 #imperial
   boilingPoint: 78.2 # This isn't a real chemical...
   meltingPoint: -19.4
   plantMetabolism:
@@ -194,6 +205,7 @@
   color: "#5050ff"
   boilingPoint: 165
   meltingPoint: -87
+  pricePerUnit: 1.25 #imperial
   reactiveEffects:
     Acidic:
       methods: [ Touch ]
@@ -235,6 +247,7 @@
   recognizable: true
   boilingPoint: 337.0
   meltingPoint: 10.31
+  pricePerUnit: 0.75 #imperial
   plantMetabolism:
   - !type:PlantAdjustToxins
     amount: 10
@@ -280,6 +293,7 @@
   physicalDesc: reagent-physical-desc-glowing
   flavor: bitter
   color: "#00ff5f"
+  pricePerUnit: 0.8 #imperial
   boilingPoint: 340282300000000000000000000000000000000 # Ethidium bromide, which doesn't boil.
   meltingPoint: 261.0
   plantMetabolism:
@@ -300,6 +314,7 @@
   desc: reagent-desc-heartbreaker-toxin
   physicalDesc: reagent-physical-desc-strong-smelling
   color: "#5f959c"
+  pricePerUnit: 4 #imperial
   metabolisms:
     Poison:
       effects:
@@ -318,6 +333,7 @@
   desc: reagent-desc-lexorin
   physicalDesc: reagent-physical-desc-pungent
   color: "#6b0007"
+  pricePerUnit: 5 #imperial
   metabolisms:
     Poison:
       effects:
@@ -334,6 +350,7 @@
   physicalDesc: reagent-physical-desc-opaque
   flavor: bitter
   color: "#77b58e"
+  pricePerUnit: 2 #imperial
   plantMetabolism:
   - !type:PlantAdjustToxins
     amount: 10
@@ -355,6 +372,7 @@
   desc: reagent-desc-histamine
   physicalDesc: reagent-physical-desc-abrasive
   color: "#FA6464"
+  pricePerUnit: 2 #imperial
   metabolisms:
     Poison:
       effects:
@@ -393,6 +411,7 @@
   desc: reagent-desc-theobromine
   physicalDesc: reagent-physical-desc-grainy
   color: "#f5f5f5"
+  pricePerUnit: 1 #imperial
   meltingPoint: 351
   boilingPoint: 554 # I'm not a chemist, but it boils at 295, lower than melting point, idk how it works so I gave it higher value
   metabolisms:
@@ -423,6 +442,7 @@
   desc: reagent-desc-amatoxin
   physicalDesc: reagent-physical-desc-nondescript
   color: "#D6CE7B"
+  pricePerUnit: 1 #imperial
   metabolisms:
     Poison:
       effects:
@@ -532,6 +552,7 @@
   desc: reagent-desc-pax
   physicalDesc: reagent-physical-desc-soothing
   color: "#AAAAAA"
+  pricePerUnit: 2.75 #imperial
   metabolisms:
     Poison:
       effects:

@@ -3,20 +3,21 @@
   name: job-name-warden
   description: job-description-warden
   playTimeTracker: JobWarden
+  psychosisGainResist: 0.75 # psychosis
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobSecurityOfficer
-      time: 36000 #10 hrs
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 21600 #Imperial role timers
   startingGear: WardenGear
   icon: "JobIconWarden"
   supervisors: job-supervisors-hos
   canBeAntag: false
   access:
   - Security
-  - Brig
   - Armory
   - Maintenance
   - Service
+  - Brig
   - External
   - Detective
   special:
@@ -30,7 +31,7 @@
     jumpsuit: ClothingUniformJumpsuitWarden
     back: ClothingBackpackSecurityFilled
     shoes: ClothingShoesBootsCombatFilled
-    eyes: ClothingEyesGlassesSunglasses
+    eyes: ClothingEyesGlassesSecurity
     outerClothing: ClothingOuterCoatWarden
     id: WardenPDA
     ears: ClothingHeadsetSecurity
