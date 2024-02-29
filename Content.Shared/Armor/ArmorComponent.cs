@@ -22,6 +22,10 @@ public sealed partial class ArmorComponent : Component
     /// </summary>
     [DataField]
     public float PriceMultiplier = 1;
+    // anti hypospray begin
+    [DataField("antihypo")]
+    public bool AntiHypo = false;
+    // anti hypospray end
 }
 
 /// <summary>

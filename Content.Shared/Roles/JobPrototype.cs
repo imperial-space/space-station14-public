@@ -116,6 +116,12 @@ namespace Content.Shared.Roles
 
         [DataField("extendedAccessGroups", customTypeSerializer: typeof(PrototypeIdListSerializer<AccessGroupPrototype>))]
         public IReadOnlyCollection<string> ExtendedAccessGroups { get; private set; } = Array.Empty<string>();
+
+        [DataField("sponsorsOnly")]
+        public bool SponsorsOnly { get; } = false; //sponsors
+
+        [DataField("psychosisGainResist")] // psychosis resists
+        public float PsychosisGainResist = 0f; // psychosis resists
     }
 
     /// <summary>

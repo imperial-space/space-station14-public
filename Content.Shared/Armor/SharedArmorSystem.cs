@@ -4,17 +4,22 @@ using Content.Shared.Inventory;
 using Content.Shared.Silicons.Borgs;
 using Content.Shared.Verbs;
 using Robust.Shared.Utility;
-
+// stamina resistance begin
+using Content.Shared.Damage.Events;
+// stamina resistance end
+// anti hypo begin
+using Content.Shared.AntiHypo;
+// anti hypo end
 namespace Content.Shared.Armor;
 
 /// <summary>
-///     This handles logic relating to <see cref="ArmorComponent" />
+/// This handles logic relating to <see cref="ArmorComponent"/>
 /// </summary>
 public abstract class SharedArmorSystem : EntitySystem
 {
     [Dependency] private readonly ExamineSystemShared _examine = default!;
 
-    /// <inheritdoc />
+    /// <inheritdoc/>
     public override void Initialize()
     {
         base.Initialize();
@@ -22,6 +27,12 @@ public abstract class SharedArmorSystem : EntitySystem
         SubscribeLocalEvent<ArmorComponent, InventoryRelayedEvent<DamageModifyEvent>>(OnDamageModify);
         SubscribeLocalEvent<ArmorComponent, BorgModuleRelayedEvent<DamageModifyEvent>>(OnBorgDamageModify);
         SubscribeLocalEvent<ArmorComponent, GetVerbsEvent<ExamineVerb>>(OnArmorVerbExamine);
+        // stamina resistance begin
+        SubscribeLocalEvent<ArmorComponent, InventoryRelayedEvent<StaminaModifyEvent>>(OnStaminaModify);
+        // stamina resistance end
+        // anti hypo begin
+        SubscribeLocalEvent<ArmorComponent, InventoryRelayedEvent<AntiHyposprayEvent>>(OnHypo);
+        // anti hypo end
     }
 
     private void OnDamageModify(EntityUid uid, ArmorComponent component, InventoryRelayedEvent<DamageModifyEvent> args)
@@ -34,6 +45,23 @@ public abstract class SharedArmorSystem : EntitySystem
     {
         args.Args.Damage = DamageSpecifier.ApplyModifierSet(args.Args.Damage, component.Modifiers);
     }
+    // stamina resistance begin
+    private void OnStaminaModify(EntityUid uid, ArmorComponent component, InventoryRelayedEvent<StaminaModifyEvent> args)
+    {
+        if (component.Modifiers.Coefficients.TryGetValue("Stamina", out var coefficient))
+        {
+            args.Args.Damage = args.Args.Damage * coefficient;
+        }
+    }
+    // stamina resistance end
+    // anti hypo begin
+    private void OnHypo(EntityUid uid, ArmorComponent component, InventoryRelayedEvent<AntiHyposprayEvent> args)
+    {
+        if (!component.AntiHypo)
+            return;
+        args.Args.Inject = false;
+    }
+    // anti hypo end
 
     private void OnArmorVerbExamine(EntityUid uid, ArmorComponent component, GetVerbsEvent<ExamineVerb> args)
     {
@@ -59,12 +87,22 @@ public abstract class SharedArmorSystem : EntitySystem
         foreach (var coefficientArmor in armorModifiers.Coefficients)
         {
             msg.PushNewline();
-
-            var armorType = Loc.GetString("armor-damage-type-" + coefficientArmor.Key.ToLower());
-            msg.AddMarkup(Loc.GetString("armor-coefficient-value",
-                ("type", armorType),
-                ("value", MathF.Round((1f - coefficientArmor.Value) * 100, 1))
-            ));
+            // stamina resistance begin
+            if (coefficientArmor.Key != "Stamina")
+            {
+                msg.AddMarkup(Loc.GetString("armor-coefficient-value",
+                    ("type", coefficientArmor.Key),
+                    ("value", MathF.Round((1f - coefficientArmor.Value) * 100,1))
+                    ));
+            }
+            if (coefficientArmor.Key == "Stamina")
+            {
+                msg.AddMarkup(Loc.GetString("armor-coefficient-value-stamina",
+                    ("type", coefficientArmor.Key),
+                    ("value", MathF.Round((1f - coefficientArmor.Value) * 100,1))
+                    ));
+            }
+            // stamina resistance end
         }
 
         foreach (var flatArmor in armorModifiers.FlatReduction)
