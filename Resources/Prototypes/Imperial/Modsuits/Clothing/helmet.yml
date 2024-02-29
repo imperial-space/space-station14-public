@@ -404,6 +404,7 @@
   - type: FlashImmunity
   - type: EyeProtection
   - type: IdentityBlocker
+  - type: ModsuitsZoom
 
 - type: entity
   parent: ClothingHeadHelmetModsuitOperativeSealed
@@ -577,6 +578,7 @@
   - type: FlashImmunity
   - type: EyeProtection
   - type: IdentityBlocker
+  - type: ModsuitsZoom
 
 - type: entity
   parent: ClothingHeadHelmetModsuitCEBase
@@ -604,6 +606,7 @@
   - type: FlashImmunity
   - type: EyeProtection
   - type: IdentityBlocker
+  - type: ModsuitsZoom
 
 - type: entity
   parent: ClothingHeadHelmetModsuitCEBase
