@@ -675,6 +675,7 @@
       - ShellShotgunPractice
       - WeaponLaserCarbinePractice
       - WeaponDisablerPractice
+      - BaseMagazineBoxACP #Imperial Space. For M2018 pistol
     dynamicRecipes:
       - CartridgeLightRifleIncendiary
       - CartridgeMagnumIncendiary
@@ -1014,6 +1015,9 @@
       - CarpetPurple
       - CarpetCyan
       - CarpetWhite
+      - ClothingUniformJumpsuitCoroner #Imperial coroner
+      - ClothingUniformJumpskirtCoroner #Imperial coroner
+      - ClothingNeckCloakNanotrasenBlack #Imperial black cloak
   - type: EmagLatheRecipes
     emagStaticRecipes:
       - ClothingHeadHatCentcomcap

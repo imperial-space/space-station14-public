@@ -45,6 +45,8 @@
       - id: WeaponAntiqueLaser
       - id: JetpackCaptainFilled
       - id: MedalCase
+      - id: ControlModsuitMagnate #Edited in Imperial Space by @sentryprimies in the name of modsuits
+      - id: ClothingHeadHatCapcap
 
 - type: entity
   id: LockerCaptainFilled
@@ -71,6 +73,8 @@
       - id: WeaponAntiqueLaser
       - id: JetpackCaptainFilled
       - id: MedalCase
+      - id: ClothingHeadHatCapcap
+      - id: ControlModsuitMagnate #Edited in Imperial Space by @sentryprimies in the name of modsuits
 
 - type: entity
   id: LockerCaptainFilledNoLaser
@@ -149,6 +153,7 @@
       - id: AccessConfigurator
       - id: RCD
       - id: RCDAmmo
+      - id: ControlModsuitAdvanced #Edited in Imperial Space by @sentryprimies in the name of modsuits
 
 - type: entity
   id: LockerChiefEngineerFilled

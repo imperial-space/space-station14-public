@@ -18,7 +18,6 @@
           snowball2: ""
       - enum.DamageStateVisualLayers.Base:
           snowball3: ""
-  - type: ItemCooldown
   - type: Item
     sprite: Imperial/Snowball/snowball.rsi
     size: Tiny

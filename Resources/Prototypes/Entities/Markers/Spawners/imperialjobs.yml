@@ -1,6 +1,6 @@
 - type: entity
   id: SpawnPointCoroner
-  parent: SpawnPointAssistant
+  parent: SpawnPointPassenger
   name: coroner
   components:
   - type: SpawnPoint
