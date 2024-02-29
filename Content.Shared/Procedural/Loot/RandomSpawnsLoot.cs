@@ -16,18 +16,19 @@ public sealed partial class RandomSpawnsLoot : IDungeonLoot
 [DataDefinition]
 public partial record struct RandomSpawnLootEntry() : IBudgetEntry
 {
+    public RandomSpawnLootEntry(string proto, float cost, float prob) //Imperial edit start
+    {
+        Proto = proto;
+        Cost = cost;
+        Prob = prob;
+    } //imperial edit end
+
     [ViewVariables(VVAccess.ReadWrite), DataField("proto", required: true, customTypeSerializer:typeof(PrototypeIdSerializer<EntityPrototype>))]
     public string Proto { get; set; } = string.Empty;
-
-    /// <summary>
-    /// Cost for this loot to spawn.
-    /// </summary>
+    
     [ViewVariables(VVAccess.ReadWrite), DataField("cost")]
     public float Cost { get; set; } = 1f;
 
-    /// <summary>
-    /// Unit probability for this entry. Weighted against the entire table.
-    /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("prob")]
     public float Prob { get; set; } = 1f;
 }
