@@ -208,6 +208,12 @@
         },
         {
             "name": "vials"
+        },
+        {
+            "name": "box_mime"
+        },
+        {
+            "name": "box_command"
         }
     ]
 }

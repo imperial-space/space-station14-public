@@ -1688,6 +1688,9 @@
         {
             "name": "service_keys",
             "directions": 4
+        },
+        {
+            "name": "comm_icon"
         }
     ]
 }
