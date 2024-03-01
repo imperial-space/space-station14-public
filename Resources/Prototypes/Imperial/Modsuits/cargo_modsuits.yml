@@ -4,9 +4,9 @@
   components:
   - type: StorageFill
     contents:
-      - id: CoreBasicModsuitConstructing
-      - id: CoreBasicModsuitConstructing
-      - id: CoreBasicModsuitConstructing
+      - id: CoreModsuitConstructing
+      - id: CoreModsuitConstructing
+      - id: CoreModsuitConstructing
   - type: Destructible
     thresholds:
     - trigger:
