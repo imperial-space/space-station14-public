@@ -15,7 +15,7 @@
         visible: false
   - type: Item
     sprite: Imperial/HardsuitInjection/ampula.rsi
-    size: Tiny
+    size: Small
   - type: SolutionContainerManager
     solutions:
       beaker:
