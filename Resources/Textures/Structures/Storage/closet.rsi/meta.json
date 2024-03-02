@@ -552,6 +552,9 @@
     },
     {
       "name": "janitor_bomb_open"
+    },
+    {
+      "name": "generic_icon"
     }
   ]
 }
