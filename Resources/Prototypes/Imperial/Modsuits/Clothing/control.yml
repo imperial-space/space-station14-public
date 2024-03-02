@@ -67,6 +67,7 @@
   #     5: 0
   #     6: 0
   #  СВЕРХУ ЭТО РАЗКОММЕНТИТь!!!
+  - type: Modsuit
 
 - type: entity
   parent: ClothingControlModsuitBase
@@ -691,6 +692,10 @@
     autoRot: true
   - type: StaticPrice
     price: 450000
+  - type: Modsuit
+    actionIds:
+    - ActionModsuitZoom
+  - type: ModsuitZoom
 
 - type: entity
   parent: ClothingControlModsuitBase

@@ -12,7 +12,7 @@ public sealed class ModsuitZoomSystem : EntitySystem
         SubscribeLocalEvent<ModsuitZoomComponent, ModsuitZoomActionEvent>(OnModsuitZoomAction);
     }
 
-    private void OnModsuitZoomAction(EntityUid<ModsuitZoomComponent> modsuit, ref ModsuitZoomActionEvent args)
+    private void OnModsuitZoomAction(Entity<ModsuitZoomComponent> modsuit, ref ModsuitZoomActionEvent args)
     {
         if (args.Handled)
             return;

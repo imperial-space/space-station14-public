@@ -1,5 +1,5 @@
 - type: entity
-  id: ActionModsuitsZoom
+  id: ActionModsuitZoom
   name: Toggle Long-Range Sight
   components:
   - type: InstantAction
@@ -7,5 +7,5 @@
     icon:
       sprite: Imperial\Modsuits\hud.rsi
       state: eye
-    event: !type:ModsuitsZoomActionEvent
+    event: !type:ModsuitZoomActionEvent
     useDelay: 0.2
