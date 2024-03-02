@@ -21,6 +21,7 @@ using Content.Shared.Module;
 using Content.Client.Guidebook;
 using Content.Client.Replay;
 using Content.Shared.Administration.Managers;
+using Content.Client.Corvax.Sponsors;
 
 
 namespace Content.Client.IoC
@@ -49,6 +50,7 @@ namespace Content.Client.IoC
             IoCManager.Register<JobRequirementsManager>();
             IoCManager.Register<DocumentParsingManager>();
             IoCManager.Register<ContentReplayPlaybackManager, ContentReplayPlaybackManager>();
+            IoCManager.Register<SponsorsManager>(); // Corvax-Sponsors
         }
     }
 }

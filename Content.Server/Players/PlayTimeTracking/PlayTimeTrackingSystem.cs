@@ -17,6 +17,7 @@ using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using Content.Server.Corvax.Sponsors;
 
 namespace Content.Server.Players.PlayTimeTracking;
 
@@ -31,6 +32,7 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
     [Dependency] private readonly IConfigurationManager _cfg = default!;
     [Dependency] private readonly MindSystem _minds = default!;
     [Dependency] private readonly PlayTimeTrackingManager _tracking = default!;
+    [Dependency] private readonly SponsorsManager _sponsorsManager = default!;
 
     public override void Initialize()
     {
@@ -160,6 +162,7 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
     public bool IsAllowed(ICommonSession player, string role)
     {
         if (!_prototypes.TryIndex<JobPrototype>(role, out var job) ||
+            (job.SponsorsOnly && (_sponsorsManager.TryGetInfo(player.UserId, out var sponsorData) && sponsorData.HavePriorityJoin == true)) ||
             job.Requirements == null ||
             !_cfg.GetCVar(CCVars.GameRoleTimers))
             return true;

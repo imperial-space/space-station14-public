@@ -36,6 +36,12 @@
     {
       "name": "red-equipped-BELT",
       "directions": 4
+    },
+    {
+      "name": "storage"
+    },
+    {
+      "name": "red-storage"
     }
   ]
 }

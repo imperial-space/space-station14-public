@@ -11,10 +11,13 @@
       "name": "base"
     },
     {
-      "name": "closed"
+      "name": "door"
     },
     {
       "name": "welded"
+    },
+    {
+      "name": "locked"
     }
   ]
 }

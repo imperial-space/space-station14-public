@@ -1183,7 +1183,7 @@
   id: FloorShuttleWhite
   name: tiles-white-shuttle-floor
   sprite: /Textures/Tiles/shuttlewhite.png
-  variants: 4
+  variants: 1
   placementVariants:
   - 1.0
   - 1.0
@@ -1237,7 +1237,7 @@
   id: FloorShuttleBlue
   name: tiles-blue-shuttle-floor
   sprite: /Textures/Tiles/shuttleblue.png
-  variants: 4
+  variants: 1
   placementVariants:
   - 1.0
   - 1.0
@@ -1255,7 +1255,7 @@
   id: FloorShuttleOrange
   name: tiles-orange-shuttle-floor
   sprite: /Textures/Tiles/shuttleorange.png
-  variants: 4
+  variants: 1
   placementVariants:
   - 1.0
   - 1.0
@@ -1273,7 +1273,7 @@
   id: FloorShuttlePurple
   name: tiles-purple-shuttle-floor
   sprite: /Textures/Tiles/shuttlepurple.png
-  variants: 4
+  variants: 1
   placementVariants:
   - 1.0
   - 1.0
@@ -1291,7 +1291,7 @@
   id: FloorShuttleRed
   name: tiles-red-shuttle-floor
   sprite: /Textures/Tiles/shuttlered.png
-  variants: 4
+  variants: 1
   placementVariants:
   - 1.0
   - 1.0
@@ -1335,7 +1335,7 @@
   id: FloorGlass
   name: tiles-glass-floor
   sprite: /Textures/Tiles/glass.png
-  variants: 4
+  variants: 1
   placementVariants:
   - 1.0
   - 1.0
@@ -1353,7 +1353,7 @@
   id: FloorRGlass
   name: tiles-reinforced-glass-floor
   sprite: /Textures/Tiles/rglass.png
-  variants: 4
+  variants: 1
   placementVariants:
   - 1.0
   - 1.0

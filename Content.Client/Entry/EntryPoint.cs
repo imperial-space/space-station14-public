@@ -1,6 +1,7 @@
 using Content.Client.Administration.Managers;
 using Content.Client.Changelog;
 using Content.Client.Chat.Managers;
+using Content.Client.Corvax.Sponsors;
 using Content.Client.Eui;
 using Content.Client.Flash;
 using Content.Client.Fullscreen;
@@ -70,6 +71,7 @@ namespace Content.Client.Entry
         [Dependency] private readonly IResourceManager _resourceManager = default!;
         [Dependency] private readonly IReplayLoadManager _replayLoad = default!;
         [Dependency] private readonly ILogManager _logManager = default!;
+        [Dependency] private readonly SponsorsManager _sponsorsManager = default!; // Corvax-Sponsors
 
         public override void Init()
         {
@@ -120,6 +122,8 @@ namespace Content.Client.Entry
             _prototypeManager.RegisterIgnore("wireLayout");
             _prototypeManager.RegisterIgnore("alertLevels");
             _prototypeManager.RegisterIgnore("nukeopsRole");
+            _prototypeManager.RegisterIgnore("stationGoal"); // Corvax-Station
+            _prototypeManager.RegisterIgnore("ertCall"); // Imperial ert call
 
             _componentFactory.GenerateNetIds();
             _adminManager.Initialize();
@@ -161,6 +165,7 @@ namespace Content.Client.Entry
             _voteManager.Initialize();
             _userInterfaceManager.SetDefaultTheme("SS14DefaultTheme");
             _userInterfaceManager.SetActiveTheme(_configManager.GetCVar(CVars.InterfaceTheme));
+            _sponsorsManager.Initialize(); // Corvax-Sponsors
             _documentParsingManager.Initialize();
 
             _baseClient.RunLevelChanged += (_, args) =>

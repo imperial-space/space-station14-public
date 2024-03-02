@@ -81,9 +81,8 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingOuterChestplateModsuitCESealed
   - type: Storage
-    maxItemSize: Huge
     grid:
-    - 0,0,6,4
+    - 0,0,8,4
   - type: PointLight
     color: "#a0f1e8"
     enabled: false
@@ -110,9 +109,8 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingOuterChestplateModsuitEngineerSealed
   - type: Storage
-    maxItemSize: Huge
     grid:
-    - 0,0,6,4
+    - 0,0,8,4
   - type: PointLight
     color: "#a0f1e8"
     enabled: false
@@ -139,9 +137,8 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingOuterChestplateModsuitAtmosphericsSealed
   - type: Storage
-    maxItemSize: Huge
     grid:
-    - 0,0,6,4
+    - 0,0,8,4
   - type: PointLight
     color: "#a0f1e8"
     enabled: false
@@ -170,9 +167,8 @@
     requiredSlot: back
     slot: outerClothing
   - type: Storage
-    maxItemSize: Huge
     grid:
-    - 0,0,6,6
+    - 0,0,9,6
   - type: PointLight
     color: "#a0f1e8"
     enabled: false
@@ -198,10 +194,6 @@
     sprite: Imperial/Modsuits/Clothing/Back/medical.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingOuterChestplateModsuitMedicalSealed
-  - type: Storage
-    maxItemSize: Huge
-    grid:
-    - 0,0,6,3
   - type: PointLight
     color: "#a0f1e8"
     enabled: false
@@ -228,9 +220,8 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingOuterChestplateModsuitCMOSealed
   - type: Storage
-    maxItemSize: Huge
     grid:
-    - 0,0,6,4
+    - 0,0,8,4
   - type: PointLight
     color: "#a0f1e8"
     enabled: false
@@ -256,10 +247,6 @@
     sprite: Imperial/Modsuits/Clothing/Back/civillian.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingOuterChestplateModsuitCivillianSealed
-  - type: Storage
-    maxItemSize: Huge
-    grid:
-    - 0,0,6,4
   - type: PointLight
     color: "#a0f1e8"
     enabled: false
@@ -286,9 +273,8 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingOuterChestplateModsuitMagnateSealed
   - type: Storage
-    maxItemSize: Huge
     grid:
-    - 0,0,6,4
+    - 0,0,8,4
   - type: PointLight
     color: "#a0f1e8"
     enabled: false
@@ -315,7 +301,6 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingOuterChestplateModsuitSecuritySealed
   - type: Storage
-    maxItemSize: Huge
     grid:
     - 0,0,6,4
   - type: PointLight
@@ -344,9 +329,8 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingOuterChestplateModsuitHOSSealed
   - type: Storage
-    maxItemSize: Huge
     grid:
-    - 0,0,6,4
+    - 0,0,8,4
   - type: PointLight
     color: "#a0f1e8"
     enabled: false
@@ -373,9 +357,8 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingOuterChestplateModsuitSalvageSealed
   - type: Storage
-    maxItemSize: Huge
     grid:
-    - 0,0,6,4
+    - 0,0,8,4
   - type: PointLight
     color: "#a0f1e8"
     enabled: false
@@ -402,9 +385,8 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingOuterChestplateModsuitMinerSealed
   - type: Storage
-    maxItemSize: Huge
     grid:
-    - 0,0,6,4
+    - 0,0,8,4
   - type: PointLight
     color: "#a0f1e8"
     enabled: false
@@ -428,9 +410,8 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingOuterChestplateModsuitOperativeSealed
   - type: Storage
-    maxItemSize: Huge
     grid:
-    - 0,0,6,4
+    - 0,0,8,4
   - type: PointLight
     color: "#a0f1e8"
     enabled: false
@@ -469,9 +450,8 @@
     requiredSlot: back
     slot: outerClothing
   - type: Storage
-    maxItemSize: Huge
     grid:
-    - 0,0,6,4
+    - 0,0,8,4
   - type: PointLight
     color: "#a0f1e8"
     enabled: false
@@ -505,9 +485,8 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingOuterChestplateModsuitOperativeCMDSealed
   - type: Storage
-    maxItemSize: Huge
     grid:
-    - 0,0,6,6
+    - 0,0,9,6
   - type: PointLight
     color: "#a0f1e8"
     enabled: false
@@ -544,10 +523,6 @@
     clothingPrototype: ClothingOuterChestplateModsuitCCSealed
     requiredSlot: back
     slot: outerClothing
-  - type: Storage
-    maxItemSize: Huge
-    grid:
-    - 0,0,6,3
   - type: PointLight
     color: "#a0f1e8"
     enabled: false
@@ -571,9 +546,8 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingOuterChestplateModsuitApocryphalSealed
   - type: Storage
-    maxItemSize: Huge
     grid:
-    - 0,0,6,6
+    - 0,0,9,6
   - type: PointLight
     color: "#a0f1e8"
     enabled: false
@@ -599,9 +573,8 @@
     requiredSlot: back
     slot: outerClothing
   - type: Storage
-    maxItemSize: Huge
     grid:
-    - 0,0,6,4
+    - 0,0,8,4
   - type: PointLight
     color: "#a0f1e8"
     enabled: false
@@ -626,9 +599,8 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingOuterChestplateModsuitEngineer2Sealed
   - type: Storage
-    maxItemSize: Huge
     grid:
-    - 0,0,6,4
+    - 0,0,8,4
   - type: PointLight
     color: "#a0f1e8"
     enabled: false
@@ -650,9 +622,8 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingOuterChestplateModsuitMedical2Sealed
   - type: Storage
-    maxItemSize: Huge
     grid:
-    - 0,0,6,3
+    - 0,0,6,4
   - type: PointLight
     color: "#a0f1e8"
     enabled: false
@@ -679,9 +650,8 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingOuterChestplateModsuitSSTOperativeCMDSealed
   - type: Storage
-    maxItemSize: Huge
     grid:
-    - 0,0,8,5
+    - 0,0,12,6
   - type: PointLight
     color: "#a0f1e8"
     enabled: false
@@ -705,9 +675,8 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingOuterChestplateModsuitSSTOperativeSupportSealed
   - type: Storage
-    maxItemSize: Huge
     grid:
-    - 0,0,8,5
+    - 0,0,9,8
   - type: PointLight
     color: "#a0f1e8"
     enabled: false
@@ -731,9 +700,8 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingOuterChestplateModsuitIndustrialSealed
   - type: Storage
-    maxItemSize: Huge
     grid:
-    - 0,0,6,5
+    - 0,0,8,6
   - type: PointLight
     color: "#a0f1e8"
     enabled: false
@@ -757,9 +725,8 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingOuterChestplateModsuitPMCSealed
   - type: Storage
-    maxItemSize: Huge
     grid:
-    - 0,0,6,6
+    - 0,0,9,6
   - type: PointLight
     color: "#a0f1e8"
     enabled: false

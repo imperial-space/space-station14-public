@@ -12,3 +12,5 @@
     sprite: Clothing/Ears/Headsets/prisoner.rsi
   - type: Clothing
     sprite: Clothing/Ears/Headsets/prisoner.rsi
+  - type: Item
+    size: Tiny

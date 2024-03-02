@@ -1,5 +1,6 @@
 using System.Linq;
 using Content.Server.Administration.Managers;
+using Content.Server.Corvax.Sponsors;
 using Content.Server.Players.PlayTimeTracking;
 using Content.Server.Station.Components;
 using Content.Shared.Preferences;
@@ -17,6 +18,7 @@ public sealed partial class StationJobsSystem
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly IBanManager _banManager = default!;
     [Dependency] private readonly PlayTimeTrackingSystem _playTime = default!;
+    [Dependency] private readonly SponsorsManager _sponsorsManager = default!;
 
     private Dictionary<int, HashSet<string>> _jobsByWeight = default!;
     private List<int> _orderedWeights = default!;
@@ -244,8 +246,25 @@ public sealed partial class StationJobsSystem
                             if (!jobPlayerOptions.ContainsKey(job))
                                 continue;
 
+                            // Found it! Yeah!
+
+                            var sponsors = new HashSet<NetUserId>();
+                            foreach (var userId in jobPlayerOptions[job])
+                            {
+                                if (_sponsorsManager.TryGetInfo(userId, out var sponsorData) && sponsorData.HavePriorityJoin == true)
+                                    sponsors.Add(userId);
+                            }
+
+                            NetUserId player;
+                            if (sponsors.Count > 0)
+                            {
+                                player = _random.Pick(sponsors);
+                            }
+                            else
+                            {
+                                player = _random.Pick(jobPlayerOptions[job]);
+                            }
                             // Picking players it finds that have the job set.
-                            var player = _random.Pick(jobPlayerOptions[job]);
                             AssignPlayer(player, job, station);
                             stationShares[station]--;
 

@@ -9,6 +9,7 @@ using Robust.Shared.Configuration;
 using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using Content.Client.Corvax.Sponsors; //Sponsors
 
 namespace Content.Client.Players.PlayTimeTracking;
 
@@ -20,6 +21,7 @@ public sealed class JobRequirementsManager
     [Dependency] private readonly IEntityManager _entManager = default!;
     [Dependency] private readonly IPlayerManager _playerManager = default!;
     [Dependency] private readonly IPrototypeManager _prototypes = default!;
+    [Dependency] private readonly SponsorsManager _sponsorsManager = default!;
 
     private readonly Dictionary<string, TimeSpan> _roles = new();
     private readonly List<string> _roleBans = new();
@@ -81,7 +83,13 @@ public sealed class JobRequirementsManager
     public bool IsAllowed(JobPrototype job, [NotNullWhen(false)] out FormattedMessage? reason)
     {
         reason = null;
-
+        //Sponsors start
+        if (job.SponsorsOnly && !(_sponsorsManager.TryGetInfo(out var sponsorData) && sponsorData.HavePriorityJoin == true))
+        {
+            reason = FormattedMessage.FromUnformatted("Только для подписчиков Imperial Pass");
+            return false;
+        }
+        //Sponsors end
         if (_roleBans.Contains($"Job:{job.ID}"))
         {
             reason = FormattedMessage.FromUnformatted(Loc.GetString("role-ban"));
