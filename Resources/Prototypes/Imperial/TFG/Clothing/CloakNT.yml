@@ -6,8 +6,6 @@
   components:
   - type: Sprite
     sprite: Imperial/TFG/Clothing/cloakNT.rsi
-  - type: Clothing
-    sprite: Imperial/TFG/Clothing/cloakNT.rsi
 
 - type: latheRecipe
   id: ClothingNeckCloakNanotrasenBlack
