@@ -1325,7 +1325,7 @@ namespace Content.Shared.CCVar
         ///     Sets the duration of the gamemode/preset vote timer.
         /// </summary>
         public static readonly CVarDef<int>
-            VoteTimerPreset = CVarDef.Create("vote.timerpreset", 30, CVar.SERVERONLY);
+            VoteTimerPreset = CVarDef.Create("vote.timerpreset", 90, CVar.SERVERONLY);
 
         /// <summary>
         ///     Sets the duration of the map vote timer when ALONE.
@@ -1831,7 +1831,7 @@ namespace Content.Shared.CCVar
         /// The time you must spend reading the rules, before the "Request" button is enabled
         /// </summary>
         public static readonly CVarDef<float> GhostRoleTime =
-            CVarDef.Create("ghost.role_time", 3f, CVar.REPLICATED | CVar.SERVER);
+            CVarDef.Create("ghost.role_time", 10f, CVar.REPLICATED | CVar.SERVER);
 
         /*
          * Fire alarm

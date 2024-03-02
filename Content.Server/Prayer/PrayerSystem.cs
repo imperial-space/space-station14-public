@@ -10,6 +10,9 @@ using Content.Shared.Prayer;
 using Content.Shared.Verbs;
 using Robust.Server.GameObjects;
 using Robust.Shared.Player;
+using Robust.Shared.Audio;//for admin pray sound
+using Content.Server.Administration.Managers;
+using Robust.Shared.Audio.Systems;//for admin pray sound
 
 namespace Content.Server.Prayer;
 /// <summary>
@@ -24,6 +27,8 @@ public sealed class PrayerSystem : EntitySystem
     [Dependency] private readonly PopupSystem _popupSystem = default!;
     [Dependency] private readonly IChatManager _chatManager = default!;
     [Dependency] private readonly QuickDialogSystem _quickDialog = default!;
+    [Dependency] private readonly SharedAudioSystem _audioSystem = default!; //Imperial admin pray
+    [Dependency] private readonly IAdminManager _adminManager = default!; //Imperial for admin pray sound
 
     public override void Initialize()
     {
@@ -104,5 +109,22 @@ public sealed class PrayerSystem : EntitySystem
 
         _chatManager.SendAdminAnnouncement($"{Loc.GetString(comp.NotificationPrefix)} <{sender.Name}>: {message}");
         _adminLogger.Add(LogType.AdminMessage, LogImpact.Low, $"{ToPrettyString(sender.AttachedEntity.Value):player} sent prayer ({Loc.GetString(comp.NotificationPrefix)}): {message}");
+        //imperial admin pray sounds start
+        switch (comp.NotificationPrefix)
+        {
+            case "prayer-chat-notify-pray":
+                _audioSystem.PlayGlobal("/Audio/Effects/admin_pray_sound.ogg", Filter.Empty().AddPlayers(_adminManager.ActiveAdmins), true, AudioParams.Default.WithVolume(-4f));
+                break;
+            case "prayer-chat-notify-honkmother":
+                _audioSystem.PlayGlobal("/Audio/Items/bikehorn.ogg", Filter.Empty().AddPlayers(_adminManager.ActiveAdmins), true, AudioParams.Default.WithVolume(-4f));
+                break;
+            case "prayer-chat-notify-centcom":
+                _audioSystem.PlayGlobal("/Audio/Effects/admin_cc_call_sound.ogg", Filter.Empty().AddPlayers(_adminManager.ActiveAdmins), true, AudioParams.Default.WithVolume(-4f));
+                break;
+            default:
+                _audioSystem.PlayGlobal("/Audio/Effects/beep1.ogg", Filter.Empty().AddPlayers(_adminManager.ActiveAdmins), true, AudioParams.Default.WithVolume(-4f));
+                break;
+        }
+        //imperial admin pray sound end
     }
 }

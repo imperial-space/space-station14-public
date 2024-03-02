@@ -94,6 +94,13 @@
         /// </summary>
         MassBan = 1 << 15,
 
+        //Imperial Call ert command start
+        /// <summary>
+        ///     Lest you spawn ERT by command.
+        /// </summary>
+        SpawnErt = 1 << 16,
+        //Imperial Call ert command end
+
         /// <summary>
         ///     Dangerous host permissions like scsi.
         /// </summary>

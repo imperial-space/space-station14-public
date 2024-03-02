@@ -19,6 +19,9 @@ using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Random;
 using Robust.Shared.Utility;
+using Content.Shared.Imperial.ICCVar;
+using Content.Shared.Voting;
+using Content.Server.Voting.Managers;
 
 namespace Content.Server.GameTicking
 {
@@ -26,6 +29,7 @@ namespace Content.Server.GameTicking
     {
         [Dependency] private readonly DiscordWebhook _discord = default!;
         [Dependency] private readonly ITaskManager _taskManager = default!;
+        [Dependency] private readonly IVoteManager _voteManager = default!;
 
         private static readonly Counter RoundNumberMetric = Metrics.CreateCounter(
             "ss14_round_number",
@@ -473,6 +477,14 @@ namespace Content.Server.GameTicking
 
                 SendStatusToAll();
                 UpdateInfoText();
+
+                // Imperial-start
+                if (_configurationManager.GetCVar(ICCVars.VoteAutoStartInLobby))
+                {
+                    _voteManager.CreateStandardVote(null, StandardVoteType.Map);
+                    _voteManager.CreateStandardVote(null, StandardVoteType.Preset);
+                }
+                // Imperial-end
 
                 ReqWindowAttentionAll();
             }

@@ -363,6 +363,7 @@ public sealed partial class StationJobsSystem
         {
             var roleBans = _banManager.GetJobBans(player);
             var profileJobs = profile.JobPriorities.Keys.ToList();
+            _sponsorsManager.TryGetInfo(player, out var sponsors);
             _playTime.RemoveDisallowedJobs(player, ref profileJobs);
 
             List<string>? availableJobs = null;
@@ -381,6 +382,8 @@ public sealed partial class StationJobsSystem
                     continue;
 
                 if (!(roleBans == null || !roleBans.Contains(jobId)))
+                    continue;
+                if (sponsors is not null && !sponsors.HavePriorityJoin && job.SponsorsOnly)//Imperial sponsors only jobs for pass
                     continue;
 
                 availableJobs ??= new List<string>(profile.JobPriorities.Count);
