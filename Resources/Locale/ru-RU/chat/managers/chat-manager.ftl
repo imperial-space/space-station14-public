@@ -21,11 +21,11 @@ chat-manager-whisper-headset-on-message = Вы не можете шептать 
 chat-manager-server-wrap-message = СЕРВЕР: {$message}
 chat-manager-sender-announcement-wrap-message = {$sender} Объявление:
                                                 {$message}
-chat-manager-entity-say-wrap-message = {$entityName} говорит, "{$message}"
+chat-manager-entity-say-wrap-message = {$entityName} говорит: "{$message}"
 chat-manager-entity-say-bold-wrap-message = [bold]{$entityName}[/bold] {$verb}, [font={$fontType} size={$fontSize}][bold]"{$message}"[/bold][/font]
 
-chat-manager-entity-whisper-wrap-message = [font size=11][italic]{$entityName} шепчет, "{$message}"[/italic][/font]
-chat-manager-entity-whisper-unknown-wrap-message = [font size=11][italic]Someone шепчет, "{$message}"[/italic][/font]
+chat-manager-entity-whisper-wrap-message = [font size=11][italic]{$entityName} шепчет: "{$message}"[/italic][/font]
+chat-manager-entity-whisper-unknown-wrap-message = [font size=11][italic]Кто-то шепчет: "{$message}"[/italic][/font]
 
 # THE() is not used here because the entity and its name can technically be disconnected if a nameOverride is passed...
 chat-manager-entity-me-wrap-message = [italic]{ PROPER($entity) ->

@@ -60,7 +60,7 @@
   noSpawn: true
   parent: [BaseNinjaObjective, BaseSurviveObjective]
   id: NinjaSurviveObjective
-  name: Survive
+  name: Выжить
   description: Ты бы не был лучшим ниндзей, если бы умер, не так ли?
   components:
   - type: Objective
@@ -72,7 +72,7 @@
   noSpawn: true
   parent: BaseNinjaObjective
   id: TerrorObjective
-  name: Call in a threat
+  name: Звонок с угрозой
   description: Используйте свои перчатки на коммуникационном пульте, чтобы принести еще больше бед на станцию
   components:
   - type: Objective
