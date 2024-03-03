@@ -28,6 +28,8 @@ cargo-console-invalid-product = Неверный ID продукта
 cargo-console-too-many = Лимит по одобренным заказам превышен
 cargo-console-snip-snip = Заказ был уреза для вместимости на шаттле
 cargo-console-insufficient-funds = Недостаточно средств (требуется {$cost})
+cargo-console-unfulfilled = Нет места для выполнения заказа
+cargo-console-trade-station = Отправлено в {$destination}
 
 cargo-console-paper-print-name = Заказ #{$orderNumber}
 cargo-console-paper-print-text =
@@ -43,5 +45,3 @@ cargo-shuttle-console-station-unknown = Неизвестно
 cargo-shuttle-console-shuttle-not-found = Не найден
 cargo-shuttle-console-organics = На шаттле обнаружены органические формы жизни
 cargo-no-shuttle = Шаттл снабжения не обнаружен!
-
-cargo-telepad-delay-upgrade = Задержка телепорта

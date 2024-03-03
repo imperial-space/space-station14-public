@@ -202,7 +202,7 @@
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
-      path: /Audio/Announcements/attention.ogg
+      path: /Audio/Announcements/aliens.ogg
     startDelay: 10
     earliestStart: 30
     minimumPlayers: 35
@@ -228,7 +228,7 @@
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
-      path: /Audio/Announcements/attention.ogg
+      path: /Audio/Announcements/aliens.ogg
     startDelay: 10
     weight: 5
     duration: 50
@@ -321,7 +321,7 @@
   - type: StationEvent
     startAnnouncement: station-event-vent-clog-start-announcement
     startAudio:
-      path: /Audio/Announcements/attention.ogg
+      path: /Audio/Announcements/ventclog.ogg
     earliestStart: 15
     minimumPlayers: 15
     weight: 5
@@ -337,7 +337,7 @@
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
-      path: /Audio/Announcements/attention.ogg
+      path: /Audio/Announcements/aliens.ogg
     startDelay: 10
     earliestStart: 15
     minimumPlayers: 15
@@ -360,7 +360,7 @@
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
-      path: /Audio/Announcements/attention.ogg
+      path: /Audio/Announcements/aliens.ogg
     startDelay: 10
     earliestStart: 20
     minimumPlayers: 15
@@ -383,7 +383,7 @@
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
-      path: /Audio/Announcements/attention.ogg
+      path: /Audio/Announcements/aliens.ogg
     startDelay: 10
     earliestStart: 20
     minimumPlayers: 15
@@ -402,7 +402,7 @@
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
-      path: /Audio/Announcements/attention.ogg
+      path: /Audio/Announcements/aliens.ogg
     startDelay: 10
     earliestStart: 20
     minimumPlayers: 15
