@@ -8,6 +8,9 @@
     "copyright": "Taken from TauCetiStation at commit https://github.com/TauCetiStation/TauCetiClassic/pull/970/commits/6f0a020e35a78b997420ca8ffff2c1de4bad3428",
     "states": [
         {
+            "name": "icon-cart"
+        },
+        {
             "name": "cart",
             "directions": 4
         },
