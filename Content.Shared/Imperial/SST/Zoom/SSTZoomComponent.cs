@@ -1,11 +1,11 @@
 ﻿using System.Numerics;
 using Robust.Shared.GameStates;
 
-namespace Content.Shared.Imperial.Modsuit.Zoom;
+namespace Content.Shared.Imperial.SST.Zoom;
 
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
-[Access(typeof(ModsuitZoomSystem))]
-public sealed partial class ModsuitZoomComponent : Component
+[Access(typeof(SSTZoomSystem))]
+public sealed partial class SSTZoomComponent : Component
 {
     [DataField, AutoNetworkedField]
     public bool Enabled;

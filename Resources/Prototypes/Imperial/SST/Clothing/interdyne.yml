@@ -69,7 +69,7 @@
     walkModifier: 1
     sprintModifier: 1
   - type: Item
-    size: 15
+    size: Small
 
 - type: entity
   parent: ClothingHeadBase

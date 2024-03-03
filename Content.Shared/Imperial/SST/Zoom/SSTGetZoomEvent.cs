@@ -1,9 +1,9 @@
 ﻿using System.Numerics;
 
-namespace Content.Shared.Imperial.Modsuit.Zoom;
+namespace Content.Shared.Imperial.SST.Zoom;
 
 [ByRefEvent]
-public record struct ModsuitGetZoomEvent(Vector2 Zoom)
+public record struct SSTGetZoomEvent(Vector2 Zoom)
 {
     public void Increase(float zoom)
     {

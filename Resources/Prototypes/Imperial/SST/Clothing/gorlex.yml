@@ -73,3 +73,58 @@
     tags:
     - WhitelistChameleon
     - HidesHair
+
+- type: entity
+  parent: ClothingNeckBase 
+  id: ClothingNeckCloakGorlexStranger
+  name: Filler
+  description: Filler
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/Neck/Gorlex/stranger.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/Neck/Gorlex/stranger.rsi
+
+- type: entity
+  parent: ClothingNeckBase 
+  id: ClothingNeckCloakGorlexSniper
+  name: Filler
+  description: Filler
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/Neck/Gorlex/snipercloak.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/Neck/Gorlex/snipercloak.rsi
+
+- type: entity
+  parent: ClothingNeckBase 
+  id: ClothingNeckCloakGorlexShort
+  name: Filler
+  description: Filler
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/Neck/Gorlex/short.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/Neck/Gorlex/short.rsi
+
+- type: entity
+  parent: ClothingNeckBase 
+  id: ClothingNeckCloakGorlexScarf
+  name: Filler
+  description: Filler
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/Neck/Gorlex/scarf.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/Neck/Gorlex/scarf.rsi
+
+- type: entity
+  parent: ClothingNeckBase 
+  id: ClothingNeckCloakGorlexRapier
+  name: Filler
+  description: Filler
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/Neck/Gorlex/rapier.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/Neck/Gorlex/rapier.rsi
