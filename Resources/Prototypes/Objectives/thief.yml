@@ -599,8 +599,8 @@
   noSpawn: true
   parent: [BaseThiefObjective, BaseLivingObjective]
   id: EscapeThiefShuttleObjective
-  name: Escape to centcom alive and unrestrained.
-  description: You don't want your illegal activities to be discovered by anyone, do you?
+  name: Сбегите на станцию Центкома живым и свободным.
+  description: Вы ведь не хотите, чтобы о вашей незаконной деятельности кто-нибудь узнал?
   components:
   - type: Objective
     difficulty: 1.3

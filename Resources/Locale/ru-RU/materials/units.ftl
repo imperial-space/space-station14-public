@@ -14,6 +14,8 @@ materials-unit-bunch = связка
 materials-unit-slab = плита
 # webs of silk
 materials-unit-web = шелк
+# chunks of ore
+materials-unit-chunk = соль
 
 # bills of spesos... not very good but they are not (yet?) used for crafting anything
 # also the lathe/atm would need bigger denominations to output...
