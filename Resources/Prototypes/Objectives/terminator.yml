@@ -15,7 +15,7 @@
   noSpawn: true
   parent: [BaseTerminatorObjective, BaseKillObjective]
   id: TerminateObjective
-  description: Follow your programming and terminate the target.
+  description: Следуйте своей программе и уничтожьте цель.
   components:
   - type: Objective
     unique: false
