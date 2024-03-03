@@ -2,17 +2,23 @@
 - type: dataset
   id: CriminalRecordsWantedReasonPlaceholders
   values:
-  - Ate their own shoes
-  - Being a clown
-  - Being a mime
-  - Breathed the wrong way
-  - Broke into evac
-  - Did literally nothing
-  - Didn't say hello to me
-  - Drank one too many
-  - Lied on common radio
-  - Looked at me funny
-  - Slipped the HoS
-  - Stole the clown's mask
-  - Told an unfunny joke
-  - Wore a gasmask
+  - Съел свою обувь.
+  - Он клоун.
+  - Он мимом.
+  - Неправильно дышал.
+  - Ворвался в эвакуацию.
+  - Буквально ничего не делал.
+  - Не поздоровался со мной.
+  - Выпил слишком много.
+  - Врал моей маме.
+  - Посмотрел на меня.
+  - Родился.
+  - Украл маску клоуна.
+  - Рассказал несмешной анекдот.
+  - Надел противогаз.
+  - По приколу.
+  - Чтобы не втыкал.
+  - Подскольнул меня.
+  - Ты точно не клоун?
+  - Как ты получил доступ сюда?
+  - Кадет сказал.

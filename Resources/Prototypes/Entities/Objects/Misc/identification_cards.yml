@@ -646,6 +646,11 @@
     - JobIconServiceWorker
     - JobIconSecurityCadet
     - JobIconZookeeper
+    - JobIconSeniorPhysician
+    - JobIconSeniorOfficer
+    - JobIconSeniorEngineer
+    - JobIconSeniorResearcher
+    - JobIconCoroner
     - JobIconVisitor
   - type: ActivatableUI
     key: enum.AgentIDCardUiKey.Key
@@ -810,6 +815,8 @@
     layers:
     - state: default
     - state: idseniorengineer
+  - type: PresetIdCard # Imperial Nuh Uh
+    job: SeniorEngineer # Imperial Nuh Uh
 
 - type: entity
   parent: IDCardStandard
@@ -820,6 +827,8 @@
     layers:
     - state: default
     - state: idseniorresearcher
+  - type: PresetIdCard # Imperial Nuh Uh
+    job: SeniorResearcher # Imperial Nuh Uh
 
 - type: entity
   parent: IDCardStandard
@@ -830,6 +839,8 @@
     layers:
     - state: default
     - state: idseniorphysician
+  - type: PresetIdCard # Imperial Nuh Uh
+    job: SeniorPhysician # Imperial Nuh Uh
 
 - type: entity
   parent: IDCardStandard
@@ -840,3 +851,5 @@
     layers:
     - state: default
     - state: idseniorofficer
+  - type: PresetIdCard # Imperial Nuh Uh
+    job: SeniorOfficer # Imperial Nuh Uh

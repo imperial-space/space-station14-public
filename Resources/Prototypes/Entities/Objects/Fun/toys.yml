@@ -1146,6 +1146,9 @@
       sprite: Objects/Fun/toy_sword.rsi
     - type: UseDelay
       delay: 1.0
+    - type: Tag
+      tags:
+      - ToySword # Imperial dual toy
     - type: PointLight
       enabled: false
       radius: 2

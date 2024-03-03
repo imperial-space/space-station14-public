@@ -176,3 +176,25 @@ ghost-role-information-space-ninja-rules = Вы элитный наемник К
 
 ghost-role-information-closet-skeleton-name = Скелет в шкафу
 ghost-role-information-closet-skeleton-description = Сеять хаос! Вы — первородная сила, не имеющая никакой преданности. Живите счастливо вместе с командой или ведите сладкую скелетную войну.
+
+ghost-role-information-exterminator-name = Истребитель
+ghost-role-information-exterminator-description = Вас отправили в прошлое, чтобы уничтожить цель, имеющую большое значение для будущего.
+ghost-role-information-exterminator-rules = Вы антагонист и можете убить любого, кто попытается вас остановить, но убийство цели всегда является вашим главным приоритетом.
+
+ghost-role-information-mothroach-name = Мотаракан
+ghost-role-information-mothroach-description = Милая, но озорная моль
+
+ghost-role-information-BreadDog-name = Собалеб
+ghost-role-information-BreadDog-description = Ты любимый ребенок повара. Ты живая хлебная собака.
+ghost-role-information-BreadDog-rules = Вы съедобная собака, сделанная из хлеба. Ваша задача найти свое место в этом мире, где все хотят вас съесть.
+
+ghost-role-information-SyndiCat-name = СиндиКот
+ghost-role-information-SyndiCat-description = Вы — верный дрессированный питомец ядерных оперативников с микробомбой. Служите своему хозяину до смерти!
+ghost-role-information-SyndiCat-rules = Вы верный и обученный питомец ядерных оперативников с микробомбой. Служите своему хозяину до смерти!
+
+ghost-role-information-Cak-name = Тот
+ghost-role-information-Cak-description = Вы любимый ребенок шеф-повара. Ты живой торт-кот.
+ghost-role-information-Cak-rules = Вы живой съедобный сладкий кот. Ваша задача найти свое место в этом мире, где все хотят вас съесть.
+
+ghost-role-information-hellspawn-name = Адское отродье
+ghost-role-information-hellspawn-description = Вы антагонист, несущий смерть тем, кто не следует за великим богом Нар'Си.

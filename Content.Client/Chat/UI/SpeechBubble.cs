@@ -87,7 +87,7 @@ namespace Content.Client.Chat.UI
             // Use text clipping so new messages don't overlap old ones being pushed up.
             RectClipContent = true;
 
-            var bubble = BuildBubble(message, speechStyleClass, fontColor);
+            var bubble = BuildBubble(message, speechStyleClass, senderEntity, fontColor); //Imperial bubble
 
             AddChild(bubble);
 
@@ -98,7 +98,7 @@ namespace Content.Client.Chat.UI
             _verticalOffsetAchieved = -ContentSize.Y;
         }
 
-        protected abstract Control BuildBubble(ChatMessage message, string speechStyleClass, Color? fontColor = null);
+        protected abstract Control BuildBubble(ChatMessage message, string speechStyleClass, EntityUid user, Color? fontColor = null); //Imperial bubble
 
         protected override void FrameUpdate(FrameEventArgs args)
         {
@@ -196,7 +196,7 @@ namespace Content.Client.Chat.UI
         {
         }
 
-        protected override Control BuildBubble(ChatMessage message, string speechStyleClass, Color? fontColor = null)
+        protected override Control BuildBubble(ChatMessage message, string speechStyleClass, EntityUid user, Color? fontColor = null) //Imperial bubble
         {
             var label = new RichTextLabel
             {
@@ -224,7 +224,7 @@ namespace Content.Client.Chat.UI
         {
         }
 
-        protected override Control BuildBubble(ChatMessage message, string speechStyleClass, Color? fontColor = null)
+        protected override Control BuildBubble(ChatMessage message, string speechStyleClass, EntityUid user, Color? fontColor = null) //Imperial bubble
         {
             if (!ConfigManager.GetCVar(CCVars.ChatEnableFancyBubbles))
             {
@@ -233,7 +233,7 @@ namespace Content.Client.Chat.UI
                     MaxWidth = SpeechMaxWidth
                 };
 
-                label.SetMessage(ExtractAndFormatSpeechSubstring(message, "BubbleContent", fontColor));
+                label.SetMessage(message.Message); //Imperial bubble
 
                 var unfanciedPanel = new PanelContainer
                 {
@@ -244,11 +244,6 @@ namespace Content.Client.Chat.UI
                 return unfanciedPanel;
             }
 
-            var bubbleHeader = new RichTextLabel
-            {
-                Margin = new Thickness(1, 1, 1, 1)
-            };
-
             var bubbleContent = new RichTextLabel
             {
                 MaxWidth = SpeechMaxWidth,
@@ -256,8 +251,7 @@ namespace Content.Client.Chat.UI
             };
 
             //We'll be honest. *Yes* this is hacky. Doing this in a cleaner way would require a bottom-up refactor of how saycode handles sending chat messages. -Myr
-            bubbleHeader.SetMessage(ExtractAndFormatSpeechSubstring(message, "BubbleHeader", fontColor));
-            bubbleContent.SetMessage(ExtractAndFormatSpeechSubstring(message, "BubbleContent", fontColor));
+            bubbleContent.SetMessage(message.Message); //Imperial bubble
 
             //As for below: Some day this could probably be converted to xaml. But that is not today. -Myr
             var mainPanel = new PanelContainer
@@ -270,18 +264,9 @@ namespace Content.Client.Chat.UI
                 Margin = new Thickness(4, 14, 4, 2)
             };
 
-            var headerPanel = new PanelContainer
-            {
-                StyleClasses = { "speechBox", speechStyleClass },
-                Children = { bubbleHeader },
-                ModulateSelfOverride = Color.White.WithAlpha(ConfigManager.GetCVar(CCVars.ChatFancyNameBackground) ? 0.75f : 0f),
-                HorizontalAlignment = HAlignment.Center,
-                VerticalAlignment = VAlignment.Top
-            };
-
             var panel = new PanelContainer
             {
-                Children = { mainPanel, headerPanel }
+                Children = { mainPanel }
             };
 
             return panel;

@@ -58,6 +58,7 @@
   - ChiefEngineer
   - StationEngineer
   - TechnicalAssistant
+  - SeniorEngineer # Imperial nuh uh
 
 - type: department
   id: Medical
@@ -70,6 +71,7 @@
   - MedicalIntern
   - Psychologist
   - Paramedic
+  - SeniorPhysician # Imperial nuh uh
 
 - type: department
   id: Security
@@ -81,6 +83,7 @@
   - SecurityCadet
   - SecurityOfficer
   - Warden
+  - SeniorOfficer # Imperial nuh uh
 
 - type: department
   id: Science
@@ -90,6 +93,7 @@
   - ResearchDirector
   - Scientist
   - ResearchAssistant
+  - SeniorResearcher # Imperial nuh uh
 
 - type: department
   id: Specific

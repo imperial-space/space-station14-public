@@ -271,7 +271,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: ClothingOuterHardsuitSyndie
+      - id: ClothingOuterHardsuitSyndieFactionExplosion
       - id: ClothingMaskGasSyndicate
       - id: ClothingHandsGlovesCombat
       - id: DoubleEmergencyOxygenTankFilled
@@ -285,7 +285,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: ClothingOuterHardsuitSyndieElite
+      - id: ClothingOuterHardsuitSyndieEliteFactionExplosion
       - id: ClothingMaskGasSyndicate
       - id: ClothingHandsGlovesCombat
       - id: DoubleEmergencyOxygenTankFilled

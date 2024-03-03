@@ -22,6 +22,7 @@ using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Timer = Robust.Shared.Timing.Timer;
+using Content.Shared.Imperial.ICCVar;
 
 namespace Content.Server.RoundEnd
 {
@@ -65,6 +66,8 @@ namespace Content.Server.RoundEnd
             base.Initialize();
             SubscribeLocalEvent<RoundRestartCleanupEvent>(_ => Reset());
             SetAutoCallTime();
+            var restartDuration = _cfg.GetCVar(ICCVars.GameEndRoundDuration); //Imperial end round timer
+            DefaultCountdownDuration = TimeSpan.FromSeconds(restartDuration); //Imperial end round timer
         }
 
         private void SetAutoCallTime()
@@ -265,7 +268,7 @@ namespace Content.Server.RoundEnd
             _countdownTokenSource?.Cancel();
             _countdownTokenSource = new();
 
-            countdownTime ??= TimeSpan.FromSeconds(_cfg.GetCVar(CCVars.RoundRestartTime));
+            countdownTime ??= TimeSpan.FromSeconds(_cfg.GetCVar(ICCVars.GameEndRoundDuration)); //Imperial edited
             int time;
             string unitsLocString;
             if (countdownTime.Value.TotalSeconds < 60)

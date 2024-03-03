@@ -20,6 +20,8 @@ using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
+using Robust.Shared.Player; //Imperial admin alert sounds
+using Content.Server.Administration.Managers; //Imperial admin alert sounds
 
 namespace Content.Server.Ame.EntitySystems;
 
@@ -241,8 +243,7 @@ public sealed class AmeControllerSystem : EntitySystem
             if (_gameTiming.CurTime > controller.EffectCooldown)
             {
                 _chatManager.SendAdminAlert(user.Value, $"increased AME over safe limit to {controller.InjectionAmount}");
-                _audioSystem.PlayGlobal("/Audio/Misc/adminlarm.ogg",
-                    Filter.Empty().AddPlayers(_adminManager.ActiveAdmins), false, AudioParams.Default.WithVolume(-8f));
+                _audioSystem.PlayGlobal("/Audio/Effects/ame_overloading_admin_alert.ogg", Filter.Empty().AddPlayers(_adminManager.ActiveAdmins), true, AudioParams.Default.WithVolume(-4f));//Imperial admin alert sounds
                 controller.EffectCooldown = _gameTiming.CurTime + controller.CooldownDuration;
             }
         }

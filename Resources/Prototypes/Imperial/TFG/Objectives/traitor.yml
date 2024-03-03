@@ -12,3 +12,4 @@
   - type: StealCondition
     prototype: WeaponPistolM2108Award
     owner: job-name-warden
+    stealGroup: M2108

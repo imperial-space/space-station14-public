@@ -420,7 +420,7 @@ namespace Content.Shared.Preferences
 
             if (configManager.GetCVar(CCVars.RestrictedNames))
             {
-                name = Regex.Replace(name, @"[^A-Z,a-z,0-9, -]", string.Empty);
+                name = Regex.Replace(name, @"[^А-Я,а-я,0-9, -]", string.Empty); // Imperial Nuh Uh russian names
             }
 
             if (configManager.GetCVar(CCVars.ICNameCase))

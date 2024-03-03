@@ -117,6 +117,12 @@
     },
     {
       "name": "scrubber-open"
+    },
+    {
+      "name": "locked"
+    },
+    {
+      "name": "unlocked"
     }
   ]
 }
