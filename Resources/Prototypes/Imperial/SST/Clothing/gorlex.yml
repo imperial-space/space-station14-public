@@ -128,3 +128,30 @@
     sprite: Imperial/SST/Clothing/Neck/Gorlex/rapier.rsi
   - type: Clothing
     sprite: Imperial/SST/Clothing/Neck/Gorlex/rapier.rsi
+
+- type: entity
+  parent: ClothingMaskGasSyndicate
+  id: ClothingMaskGorlexAdvancedGasmask
+  name: security gas mask
+  description: A standard issue Security gas mask.
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/Mask/elite_syndie.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/Mask/elite_syndie.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Cold: 0.6
+        Caustic: 0.5
+
+- type: entity
+  parent: ClothingBeltMilitaryWebbingBrigmed
+  id: ClothingBeltGorlexWebbing
+  name: security gas mask
+  description: A standard issue Security gas mask.
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/Belt/syndicatewebbing.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/Belt/syndicatewebbing.rsi
