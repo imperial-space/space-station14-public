@@ -1,0 +1,23 @@
+- type: entity
+  id: ActionSSTZoom
+  name: Toggle Long-Range Sight
+  components:
+  - type: InstantAction
+    itemIconStyle: NoItem
+    icon:
+      sprite: Imperial\Modsuits\hud.rsi
+      state: eye
+    event: !type:SSTZoomActionEvent
+    useDelay: 0.2
+
+- type: entity
+  id: ActionSSTBootSweep
+  name: Boot Sweep # TODO CM14 description
+  components:
+  - type: InstantAction
+    itemIconStyle: NoItem
+    icon:
+      sprite: Imperial\Modsuits\hud.rsi
+      state: syndboots
+    event: !type:SSTBootSweepActionEvent
+    useDelay: 15

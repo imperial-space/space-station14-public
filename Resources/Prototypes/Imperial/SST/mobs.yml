@@ -6,7 +6,12 @@
   - type: SST
     actionIds:
     - ActionSSTZoom 
+    - ActionSSTBootSweep
   - type: SSTZoom
+  - type: SSTBootSweep
+    damage:
+      types:
+        Blunt: 30
   - type: Loadout
     prototypes: [ SSTLeaderGear ]
 

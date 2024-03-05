@@ -14,10 +14,6 @@
     spawned:
     - id: FoodMeatHuman
       amount: 5
-  - type: Modsuit
-    actionIds:
-    - ActionModsuitZoom
-  - type: ModsuitZoom
 
 - type: entity
   parent: BaseSpeciesDummy
