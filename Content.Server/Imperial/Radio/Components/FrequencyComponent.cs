@@ -1,4 +1,4 @@
-namespace Content.Server.Radio.Components;
+namespace Content.Server.Imperial.Radio.Components;
 [RegisterComponent]
 public sealed partial class FrequencyComponent : Component
 {
