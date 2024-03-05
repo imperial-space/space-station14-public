@@ -67,7 +67,7 @@ public sealed class SSTBootSweepSystem : EntitySystem
 
             var filter = Filter.Pvs(humanoid, entityManager: EntityManager);
 
-            _throwing.TryThrow(humanoid, diff, 10);
+            _throwing.TryThrow(humanoid, diff, 5);
             _stun.TryKnockdown(humanoid, sst.Comp.StunTime, true);
             _stun.TryStun(humanoid, sst.Comp.StunTime, true);
 
