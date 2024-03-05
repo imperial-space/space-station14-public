@@ -1,7 +1,7 @@
 using Content.Server.Chat.Systems;
 using Content.Server.Radio.Components;
 using Content.Shared.Verbs;
-namespace Content.Server.Radio.EntitySystems;
+namespace Content.Server.Imperial.Radio.EntitySystems;
 
 public sealed class frequencychanger : EntitySystem
 {
