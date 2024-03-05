@@ -12,7 +12,7 @@ public sealed class SSTZoomSystem : EntitySystem
         SubscribeLocalEvent<SSTZoomComponent, SSTZoomActionEvent>(OnSSTZoomAction);
     }
 
-    private void OnSSTZoomAction(EntityUid<SSTZoomComponent> sst, ref SSTZoomActionEvent args)
+    private void OnSSTZoomAction(Entity<SSTZoomComponent> sst, ref SSTZoomActionEvent args)
     {
         if (args.Handled)
             return;
