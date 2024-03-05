@@ -66,7 +66,6 @@ public sealed class SSTBootSweepSystem : EntitySystem
                 _damageable.TryChangeDamage(humanoid, damage);
 
             var filter = Filter.Pvs(humanoid, entityManager: EntityManager);
-            // _colorFlash.RaiseEffect(Color.Red, new List<EntityUid> { humanoid }, filter);
 
             _throwing.TryThrow(humanoid, diff, 10);
             _stun.TryKnockdown(humanoid, sst.Comp.StunTime, true);
