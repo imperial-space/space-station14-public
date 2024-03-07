@@ -23,13 +23,13 @@ public sealed partial class SSTBootSweepComponent : Component
 
     [DataField, AutoNetworkedField]
     [ViewVariables(VVAccess.ReadWrite)]
-    public SoundSpecifier Sound = new SoundCollectionSpecifier("Rain");
+    public SoundSpecifier Sound = new SoundCollectionSpecifier("BaseWhistle");
 
     [DataField, AutoNetworkedField]
     [ViewVariables(VVAccess.ReadWrite)]
-    public EntProtoId HitEffect = "CrateModsuitsBasic";
+    public EntProtoId HitEffect = "SSTEffectPunch";
 
     [DataField, AutoNetworkedField]
     [ViewVariables(VVAccess.ReadWrite)]
-    public SoundSpecifier HitSound = new SoundPathSpecifier("/Audio/Imperial/Modsuits/ballin.ogg");
+    public SoundSpecifier HitSound = new SoundPathSpecifier("/Audio/Weapons/Guns/Gunshots/bang.ogg");
 }

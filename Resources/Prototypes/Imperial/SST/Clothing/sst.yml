@@ -60,6 +60,15 @@
   - type: GloveHeatResistance
     heatResistance: 2500
   - type: Insulated
+  - type: MeleeWeapon
+    autoAttack: true
+    attackRate: 4
+    damage:
+      types:
+       Blunt: 8
+    soundHit:
+      collection: Punch
+    animation: WeaponArcFist
 
 - type: entity
   parent: SyndieClothingHandsBase
@@ -74,3 +83,12 @@
   - type: GloveHeatResistance
     heatResistance: 1400
   - type: Insulated
+  - type: MeleeWeapon
+    autoAttack: true
+    attackRate: 2
+    damage:
+      types:
+       Blunt: 7.5
+    soundHit:
+      collection: Punch
+    animation: WeaponArcFist

@@ -37,3 +37,18 @@
   icon:
     sprite: Imperial/SST/Hud/synd.rsi
     state: Support
+
+- type: entity
+  id: SSTEffectPunch
+  noSpawn: true
+  components:
+  - type: TimedDespawn
+    lifetime: 0.4
+  - type: Sprite
+    sprite: Imperial/SST/Effects/attack.rsi
+    state: punch
+    drawdepth: Effects
+  - type: EffectVisuals
+  - type: Tag
+    tags:
+    - HideContextMenu
