@@ -1,0 +1,43 @@
+- type: tile
+  id: FloorSSTDark
+  name: tiles-sst-dark
+  sprite: /Textures/Imperial/SST/Tiles/dark.png
+  baseTurf: Plating
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemSteel #всего лишь для одной локации, не вижу смысла пихать отдельный энтити для неё.
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorSSTHerringbone
+  name: tiles-sst-herringbone
+  sprite: /Textures/Imperial/SST/Tiles/dark_herringbone.png
+  baseTurf: Plating
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemSteel #всего лишь для одной локации, не вижу смысла пихать отдельный энтити для неё.
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorSSTMono
+  name: tiles-sst-mono
+  sprite: /Textures/Imperial/SST/Tiles/dark_mono.png
+  baseTurf: Plating
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemSteel #всего лишь для одной локации, не вижу смысла пихать отдельный энтити для неё.
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorSSTTechMaint
+  name: tiles-sst-techmaint
+  sprite: /Textures/Imperial/SST/Tiles/tech_maint.png
+  baseTurf: Plating
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemSteel #всего лишь для одной локации, не вижу смысла пихать отдельный энтити для неё.
+  heatCapacity: 10000

@@ -52,3 +52,36 @@
   - type: Tag
     tags:
     - HideContextMenu
+
+- type: entity
+  id: SSTOverwatch 
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Hud/portraits.rsi
+    state: overwatch
+    layers:
+        - state: "overwatch"
+          shader: unshaded
+    drawdepth: Objects
+
+- type: entity
+  id: SSTCombatRobot 
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Hud/portraits.rsi
+    state: combatrobot
+    layers:
+        - state: "combatrobot"
+          shader: unshaded
+    drawdepth: Objects
+
+- type: entity
+  id: SSTLocalMilitia
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Hud/portraits.rsi
+    state: localmilitia
+    layers:
+        - state: "localmilitia"
+          shader: unshaded
+    drawdepth: Objects
