@@ -1,0 +1,68 @@
+- type: entity
+  parent: CrateGeneric
+  id: CrateSyndicateCage
+  name: хомячья клетка синдиката
+  description: Обычная хомячья клетка с поилкой, но в стиле синдиката
+  suffix: Пустой
+  components:
+  - type: Sprite
+    sprite: Imperial/Hamlet Ops/cage.rsi
+    layers:
+    - state: base
+    - state: closed
+      map: ["enum.StorageVisualLayers.Door"]
+  - type: Icon
+    sprite: Imperial/Hamlet Ops/cage.rsi
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 15
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/woodhit.ogg
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetPlastic:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Physics
+    bodyType: Dynamic
+  - type: EntityStorage
+    capacity: 1
+    airtight: false
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.4,0.4,0.29"
+        density: 80
+        mask:
+        - LargeMobMask
+        layer:
+        - LargeMobLayer
+  - type: StaticPrice
+    price: 60
+
+- type: entity
+  id: SyndiNPCCage
+  parent: CrateSyndicateCage
+  suffix: Хомяк-агент
+  components:
+    - type: StorageFill
+      contents:
+        - id: MobSyndicateHamster
+
+- type: listing
+  id: UplinkHamsterAgent
+  name: клетка с хомяком-агентом
+  description: Генетически точная копия всеми любимого ворчливого, милого и пушистого хомяка, с взрывчатой модификацией. Идеальный выбор для убийства одиночной цели.
+  productEntity: SyndiNPCCage
+  cost:
+    Telecrystal: 6
+  categories:
+  - UplinkExplosives
