@@ -1,8 +1,8 @@
 - type: entity
-  name: translate testing
+  name: Hamlet
   parent: MobHamster
   id: MobSyndicateHamster
-  description: translate testing
+  description: A grumpy, cute and fluffy hamster.
   suffix: Syndie
   components:
   - type: Sprite
