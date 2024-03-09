@@ -63,6 +63,6 @@
   description: Генетически точная копия всеми любимого ворчливого, милого и пушистого хомяка, с взрывчатой модификацией. Идеальный выбор для убийства одиночной цели.
   productEntity: SyndiNPCCage
   cost:
-    Telecrystal: 6
+    Telecrystal: 8
   categories:
   - UplinkExplosives
