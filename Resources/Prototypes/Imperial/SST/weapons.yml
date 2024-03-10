@@ -78,6 +78,8 @@
   - type: Item
     sprite: Imperial/SST/Weapons/cr42inhands.rsi
     size: Normal
+  - type: StaticPrice
+    price: 5000
 
 - type: entity
   name: C-20r sub machine gun
@@ -118,6 +120,8 @@
   - type: Item
     sprite: Imperial/SST/Weapons/centaurinhands.rsi
     size: Normal
+  - type: StaticPrice
+    price: 7500
 
 - type: entity
   name: Haarabad Rifle
@@ -158,6 +162,8 @@
   - type: Item
     sprite: Imperial/SST/Weapons/jahveinhands.rsi
     size: Normal
+  - type: StaticPrice
+    price: 6500
 
 - type: entity
   name: L6 SAW
@@ -187,3 +193,5 @@
   - type: Item
     sprite: Imperial/SST/Weapons/l6inhands.rsi
     size: Normal
+  - type: StaticPrice
+    price: 15000
