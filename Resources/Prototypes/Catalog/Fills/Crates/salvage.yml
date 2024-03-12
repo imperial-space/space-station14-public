@@ -30,6 +30,14 @@
   components:
   - type: StorageFill
     contents:
+      - id: ClothingControlModsuitEngineer2Sealed #Imperia start
+        prob: 0.06
+      - id: ClothingControlModsuitMedical2Sealed
+        prob: 0.065
+      - id: ClothingOuterChestplateModsuitRND2Sealed
+        prob: 0.065
+      - id: ClothingControlModsuitMinerSealed 
+        prob: 0.095 #Imperia end
         # Normal (10%)
       - id: OxygenTankFilled
         prob: 0.1

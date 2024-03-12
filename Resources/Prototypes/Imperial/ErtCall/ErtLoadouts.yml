@@ -42,7 +42,7 @@
     eyes: ClothingEyesHudMedical
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterVestKevlar
-    id: ERTCallLeaderPDA
+    id: PDAMedicalERT
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltMedicalFilled
     pocket1: ERTUplinkMedic
@@ -58,7 +58,7 @@
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTMedical
     suitstorage: OxygenTankFilled
-    id: ERTLeaderPDA
+    id: PDAMedicalERT
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltMedicalFilled
     pocket1: ERTUplinkMedic
@@ -163,7 +163,7 @@
 - type: startingGear
   id: ERTCallCBURNLeaderGearEVA
   equipment:
-    jumpsuit: ClothingUniformJumpsuitColorBrown
+    jumpsuit: ClothingUniformJumpsuitCBURN
     back: ClothingBackpackCallERTCBURNFilledLeader
     mask: ClothingMaskGasExplorer
     eyes: ClothingEyesGlassesSecurity
@@ -184,7 +184,7 @@
 - type: startingGear
   id: ERTCallCBURNSecurityGearEVA
   equipment:
-    jumpsuit: ClothingUniformJumpsuitColorBrown
+    jumpsuit: ClothingUniformJumpsuitCBURN
     back: ClothingBackpackCallERTCBURNFilled
     mask: ClothingMaskGasExplorer
     eyes: ClothingEyesGlassesSecurity
@@ -205,7 +205,7 @@
 - type: startingGear
   id: ERTCallCBURNMedicGearEVA
   equipment:
-    jumpsuit: ClothingUniformJumpsuitColorBrown
+    jumpsuit: ClothingUniformJumpsuitCBURN
     back: ClothingBackpackCallERTCBURNFilled
     mask: ClothingMaskGasExplorer
     eyes: ClothingEyesGlassesSecurity
@@ -213,7 +213,7 @@
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitCBURNMedic
     shoes: ClothingShoesBootsCombatFilled
-    id: CBURNPDA
+    id: PDAMedicalERT
     pocket1: ERTUplinkMedic
     #pocket2: WeaponLaserGun
     suitstorage: YellowOxygenTankFilled
