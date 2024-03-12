@@ -1,0 +1,8 @@
+
+- type: entity
+  parent: WindoorSecure
+  id: WindoorSyndicateLocked
+  suffix: Syndicate, Locked
+  components:
+  - type: AccessReader
+    access: [["SyndicateAgent"]]

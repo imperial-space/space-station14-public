@@ -230,11 +230,3 @@
   components:
   - type: AccessReader
     access: [["Paramedic"]]
-
-- type: entity
-  parent: Windoor
-  id: WindoorSyndicateLocked
-  suffix: Syndicate, Locked
-  components:
-  - type: AccessReader
-    access: [["SyndicateAgent"]]
