@@ -1,0 +1,17 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: Centcomcloackformal
+  name: CentocomCloackFormal
+  description: Radiates bureaucracy!
+  components:
+  - type: Sprite
+    sprite: Imperial/ImperialClothes/centcomcloakformal.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakHosFormal
+  name: head of security's formal cloak
+  description: Made for business meetings with NanoTrasen's enemies.
+  components:
+  - type: Sprite
+    sprite: Imperial/ImperialClothes/hoscloakformal.rsi

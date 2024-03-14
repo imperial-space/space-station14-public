@@ -303,6 +303,7 @@
       - id: HoloprojectorSecurity
       - id: BookSecretDocuments
       - id: ControlModsuitSafeguard #Edited in Imperial Space by @sentryprimies in the name of modsuits
+      - id: ClothingNeckCloakHosFormal #Imperial cloak /Добавляет формальный плащ, нарисованный нашими спрайтерами
 
 - type: entity
   id: LockerHeadOfSecurityFilled
@@ -334,3 +335,4 @@
       - id: HoloprojectorSecurity
       - id: BookSecretDocuments
       - id: ControlModsuitSafeguard #Edited in Imperial Space by @sentryprimies in the name of modsuits
+      - id: ClothingNeckCloakHosFormal #Imperial cloak /Добавляет формальный плащ, нарисованный нашими спрайтерами
