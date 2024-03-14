@@ -1,0 +1,24 @@
+- type: entity
+  id: ImperialGreenScreen
+  name: lava
+  description: Don't jump in. It's not worth it, no matter how funny it is.
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Lava
+  - type: Transform
+    anchored: true
+  - type: Clickable
+  - type: Sprite
+    sprite: Imperial/GreenScreen/greenScreen.rsi
+    drawdepth: BelowFloor
+    layers:
+      - state: greenScreen
+        shader: unshaded
+  - type: Icon
+    sprite: Imperial/GreenScreen/greenScreen.rsi
+    state: greenScreen
+  - type: Physics
+    bodyType: Static
