@@ -28,8 +28,9 @@
         orGroup: GiftPool
       - id: GlockenspielInstrument
         orGroup: GiftPool
-      - id: ClothingNeckCloakTrans
-        orGroup: GiftPool
+     # Imperial
+     # - id: ClothingNeckCloakTrans
+     #   orGroup: GiftPool
       - id: ToySkeleton
         orGroup: GiftPool
       - id: Basketball
