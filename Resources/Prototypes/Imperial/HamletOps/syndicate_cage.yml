@@ -1,18 +1,18 @@
 - type: entity
   parent: CrateGeneric
   id: CrateSyndicateCage
-  name: хомячья клетка синдиката
-  description: Обычная хомячья клетка с поилкой, но в стиле синдиката
-  suffix: Пустой
+  name: syndicate hamster cage
+  description: Simple hamster cage in Syndicate style
+  suffix: Solid
   components:
   - type: Sprite
-    sprite: Imperial/Hamlet Ops/cage.rsi
+    sprite: Imperial/HamletOps/cage.rsi
     layers:
     - state: base
     - state: closed
       map: ["enum.StorageVisualLayers.Door"]
   - type: Icon
-    sprite: Imperial/Hamlet Ops/cage.rsi
+    sprite: Imperial/HamletOps/cage.rsi
   - type: Destructible
     thresholds:
     - trigger:
@@ -51,7 +51,7 @@
 - type: entity
   id: SyndiNPCCage
   parent: CrateSyndicateCage
-  suffix: Хомяк-агент
+  suffix: Hamster-Ops
   components:
     - type: StorageFill
       contents:
@@ -59,8 +59,8 @@
 
 - type: listing
   id: UplinkHamsterAgent
-  name: клетка с хомяком-агентом
-  description: Генетически точная копия всеми любимого ворчливого, милого и пушистого хомяка, с взрывчатой модификацией. Идеальный выбор для убийства одиночной цели.
+  name: uplink-explosive-hamster-name
+  description: uplink-explosive-hamster-desc
   productEntity: SyndiNPCCage
   cost:
     Telecrystal: 8
