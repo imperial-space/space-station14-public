@@ -15,19 +15,21 @@
         - CigarGold
         - ClothingNeckCloakHerald
         - ClothingHeadHelmetTemplar
-        - ClothingNeckCloakTrans
-        - ClothingNeckCloakAdmin
+       # Imperial
+       # - ClothingNeckCloakTrans
+       # - ClothingNeckCloakAdmin
         - ClothingNeckCloakMoth
         - ClothingNeckCloakVoid
         - ClothingNeckCloakGoliathCloak
-        - ClothingNeckCloakAce
-        - ClothingNeckCloakAro
-        - ClothingNeckCloakBi
-        - ClothingNeckCloakIntersex
-        - ClothingNeckCloakLesbian
-        - ClothingNeckCloakGay
-        - ClothingNeckCloakEnby
-        - ClothingNeckCloakPan
+       # Imperial
+       # - ClothingNeckCloakAce
+       # - ClothingNeckCloakAro
+       # - ClothingNeckCloakBi
+       # - ClothingNeckCloakIntersex
+       # - ClothingNeckCloakLesbian
+       # - ClothingNeckCloakGay
+       # - ClothingNeckCloakEnby
+       # - ClothingNeckCloakPan
         - ToySkeleton
         - Basketball
         - Football
@@ -36,15 +38,16 @@
         - PonderingOrb
         - Skub
         - DrinkMugDog
-        - ClothingNeckLGBTPin
-        - ClothingNeckAromanticPin
-        - ClothingNeckAsexualPin
-        - ClothingNeckBisexualPin
-        - ClothingNeckIntersexPin
-        - ClothingNeckLesbianPin
-        - ClothingNeckNonBinaryPin
-        - ClothingNeckPansexualPin
-        - ClothingNeckTransPin
+       # Imperial
+       # - ClothingNeckLGBTPin
+       # - ClothingNeckAromanticPin
+       # - ClothingNeckAsexualPin
+       # - ClothingNeckBisexualPin
+       # - ClothingNeckIntersexPin
+       # - ClothingNeckLesbianPin
+       # - ClothingNeckNonBinaryPin
+       # - ClothingNeckPansexualPin
+       # - ClothingNeckTransPin
         - CluwneHorn
         - ClothingMaskRat
         - MysteryFigureBox

@@ -53,9 +53,10 @@
   components:
   - type: StorageFill
     contents:
-      - id: ClothingNeckLGBTPin
-        prob: 0.06
-        orGroup: dressermainloot
+     # Imperial
+     # - id: ClothingNeckLGBTPin
+     #   prob: 0.06
+     #   orGroup: dressermainloot
       - id: ClothingUniformJumpsuitColorGrey
         prob: 0.06
         orGroup: dressermainloot
