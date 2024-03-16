@@ -67,7 +67,7 @@
     solution: melee
   - type: SolutionInjectOnCollide
     transferAmount: 5
-    blockSlots: NONE
+    blockSlots: OuterClothing #Imperial balance pax nerf
   - type: SolutionTransfer
     maxTransferAmount: 5
   - type: Wieldable
