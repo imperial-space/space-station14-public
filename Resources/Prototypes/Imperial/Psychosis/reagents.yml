@@ -8,6 +8,7 @@
   color: "#AAAAAA"
   metabolisms:
     Poison:
+      metabolismRate: 0.33 #Imperial balance.
       effects:
       - !type:HealthChange
         damage:
@@ -20,6 +21,9 @@
         - !type:ReagentThreshold
           min: 9
       - !type:GenericStatusEffect
+        conditions: #Imperial balance
+        - !type:ReagentThreshold #///
+          min: 4 #Imperial balance END
         key: Pacified
         component: Pacified
         refresh: false
