@@ -1,5 +1,5 @@
 - type: entity
-  name: Спавнер Рудных крабов
+  name: Filler
   id: SpawnMobOreCrabs
   parent: MarkerBase
   components:
@@ -14,7 +14,7 @@
         - MobIronCrab
 
 - type: entity
-  name: Спавнер кварцевого краба
+  name: Filler
   id: SpawnMobOreCrabQuartz
   parent: MarkerBase
   components:
@@ -27,7 +27,7 @@
         - MobQuartzCrab
 
 - type: entity
-  name: Спавнер уранового краба
+  name: Filler
   id: SpawnMobOreCrabUranium
   parent: MarkerBase
   components:
@@ -40,7 +40,7 @@
         - MobUraniumCrab
 
 - type: entity
-  name: Спавнер железного краба
+  name: Filler
   id: SpawnMobOreCrabIron
   parent: MarkerBase
   components:
@@ -53,7 +53,7 @@
         - MobIronCrab
 
 - type: entity
-  name: Периодический спавнер рудных крабов
+  name: Периодический Filler
   id: TimedSpawnerRockCrabs
   parent: MarkerBase
   components:
