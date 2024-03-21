@@ -2,6 +2,7 @@
   name: chair
   id: BaseSofa
   parent: SeatBase
+  abstract: true
   components:
   - type: Physics
     bodyType: Static
