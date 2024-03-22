@@ -66,6 +66,20 @@
         Blunt: 10
 
 - type: entity
+  id: PresentableRag
+  parent: RagItem
+  name: presentable rag
+  description: A wardrobe item for wiping drops of liquids from a suit and placing under a soft spot on dirty benches.
+  components:
+  - type: Sprite
+    sprite: Imperial/TFG/GoldenLife/presentableRag.rsi
+    state: HQrag
+  - type: Item
+    sprite: Imperial/TFG/GoldenLife/presentableRag.rsi
+    state: HQrag
+    size: 2
+
+- type: entity
   id: PresentableBox
   parent: BaseStorageItem
   name: presentable box

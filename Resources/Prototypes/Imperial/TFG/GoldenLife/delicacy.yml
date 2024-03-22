@@ -1,0 +1,81 @@
+# Tinned MRE for Representative
+- type: entity
+  id: FoodPresentableTinMRECaviar
+  parent: FoodTinMRE
+  name: space chum salmon caviar
+  description: Delicios MRE.
+  components:
+  - type: Sprite
+    sprite: Imperial/TFG/GoldenLife/presentableTin.rsi
+  - type: Food
+    trash: FoodTinMRECaviarTrash
+  - type: FlavorProfile
+    flavors:
+    - food
+    - creamy
+
+- type: entity
+  id: FoodPresentableTinMRECaviarTrash
+  parent: FoodTinBaseTrash
+  name: space chum salmon caviar
+  components:
+  - type: Sprite
+    sprite: Imperial/TFG/GoldenLife/presentableTin.rsi
+#Tinned MRE END
+
+# Edible rag
+- type: entity
+  id: DeliciousRag
+  parent: PresentableRag
+  name: delicious rag
+  description: A delicacy for representatives of the moth race!
+  components:
+  - type: Item
+    size: 2
+  - type: Food
+    requiresSpecialDigestion: true
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 40
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 40
+  - type: Tag
+    tags:
+    - ClothMade
+#Edible rag END
+
+# Golden Pizza
+- type: entity
+  id: FoodPizzaGolden
+  parent: FoodPizzaBase
+  name: golden pizza
+  description: You are rich, crazy bastartd.
+  components:
+  - type: Sprite
+    sprite: Imperial/TFG/GoldenLife/goldenPizza.rsi
+    layers:
+    - state: goldenPizza
+  - type: FlavorProfile
+    flavors:
+      - metallic
+      - food
+  - type: SliceableFood
+    slice: FoodPizzaGoldenSlice
+
+- type: entity
+  id: FoodPizzaGoldenSlice
+  parent: FoodPizzaSliceBase
+  name: slice of golden pizza
+  description: A slice of sientist's heart attack.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - metallic
+      - food
+  - type: Sprite
+    sprite: Imperial/TFG/GoldenLife/goldenPizza.rsi
+    layers:
+    - state: goldenPizzaSlice
+#Golden Pizza END
