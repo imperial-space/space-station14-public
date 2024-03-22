@@ -2,9 +2,16 @@ ent-MobSyndicateHamster = { ent-MobSyndicateHamster }
     .desc = { ent-MobSyndicateHamster.desc }
 ent-CrateSyndicateCage = { ent-CrateSyndicateCage }
     .desc = { ent-CrateSyndicateCage.desc }
+ent-MobSyndicateHamster = { ent-MobSyndicateHamster }
+    .desc = { ent-MobSyndicateHamster.desc }
+ent-SyndiNPCCage = { ent-SyndiNPCCage }
+    .desc = { ent-SyndiNPCCage.desc }
 
 uplink-explosive-hamster-name = хомячья клетка синдиката
 uplink-explosive-hamster-desc = Генетически точная копия всеми любимого ворчливого, милого и пушистого хомяка, с взрывчатой модификацией. Идеальный выбор для убийства одиночной цели.
+
+ent-SyndiNPCCage = хомячья клетка синдиката
+ent-SyndiNPCCage.desc = Обычная хомячья клетка с поилкой, но в стиле синдиката
 
 ent-CrateSyndicateCage = хомячья клетка синдиката
 ent-CrateSyndicateCage.desc = Обычная хомячья клетка с поилкой, но в стиле синдиката
