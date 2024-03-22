@@ -40,7 +40,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitParamedicNT
     back: ClothingBackpackFilled #The medical backpack sprite looks way worse so this will do for now.
-    shoes: ClothingShoesParamedic # Imperial Clothes Измененные ботинки парамедика со стандартных. В стандарте colorBlue
+    shoes: ClothingShoesColorBlue
     id: MedicalPDA
     ears: ClothingHeadsetMedical
     eyes: ClothingEyesHudMedical
