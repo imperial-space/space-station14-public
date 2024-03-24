@@ -4,8 +4,10 @@ ent-WeaponRifleGoldenAkLegend = { ent-WeaponRifleGoldenAk }
     .desc = Легенда, которой, по слухам, поклоняется совет директоров NanoTrasen. Отполированный до блеска лучшими горничными компании.
     .suffix = Блестящий
 ent-MagazineLightRifleGolden = {ent-BaseMagazineLightRifle}
+    .desc = {ent-BaseMagazineLightRifle.desc}
     .suffix = ЗолотойАК
 ent-CartridgeLightRifleGolden = {ent-CartridgeLightRifle}
+    .desc = {BaseCartridgeLightRifle.desc}
     .suffix = Золотой
 
 ent-GoldenSpoon = золотая ложка

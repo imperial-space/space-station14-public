@@ -57,6 +57,10 @@
     sprite: Imperial/TFG/GoldenLife/goldenPizza.rsi
     layers:
     - state: goldenPizza
+  - type: FlavorProfile
+    flavors:
+      - metallic
+      - food
   - type: SliceableFood
     slice: FoodPizzaGoldenSlice
 
