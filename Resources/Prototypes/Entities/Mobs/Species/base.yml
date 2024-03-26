@@ -233,6 +233,20 @@
   abstract: true
   components:
   - type: Flashable
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 400
+      behaviors:
+      - !type:GibBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Heat
+        damage: 800
+      behaviors:
+      - !type:FireEntity { }
   - type: Barotrauma
     damage:
       types:

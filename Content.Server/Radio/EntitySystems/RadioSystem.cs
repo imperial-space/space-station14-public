@@ -6,6 +6,7 @@ using Content.Server.VoiceMask;
 using Content.Shared.Chat;
 using Content.Shared.Database;
 using Content.Shared.Radio;
+using Content.Server.Imperial.Radio
 using Content.Shared.Radio.Components;
 using Robust.Server.GameObjects;
 using Robust.Shared.Map;
@@ -103,6 +104,19 @@ public sealed class RadioSystem : EntitySystem
         var radioQuery = EntityQueryEnumerator<ActiveRadioComponent, TransformComponent>();
         while (canSend && radioQuery.MoveNext(out var receiver, out var radio, out var transform))
         {
+            // сверяет частоты рации у приемника и отправителя.
+            var hasfreqA = HasComp<FrequencyComponent>(radioSource);
+            var hasfreqB = HasComp<FrequencyComponent>(receiver);
+            if (hasfreqA != hasfreqB)
+                continue;
+            if (hasfreqA && hasfreqB)
+            {
+
+                TryComp(radioSource, out FrequencyComponent? rs);
+                TryComp(receiver, out FrequencyComponent? rc);
+                if (rs!.frequency != rc!.frequency) continue;
+            }
+            
             if (!radio.Channels.Contains(channel.ID) || (TryComp<IntercomComponent>(receiver, out var intercom) && !intercom.SupportedChannels.Contains(channel.ID)))
                 continue;
 
