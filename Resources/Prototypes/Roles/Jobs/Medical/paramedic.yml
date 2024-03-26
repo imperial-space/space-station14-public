@@ -23,7 +23,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitParamedic
     back: ClothingBackpackMedicalFilled
-    shoes: ClothingShoesColorWhite
+    shoes: ClothingShoesParamedic # Imperial Clothes Измененные ботинки парамедика со стандартных. В стандарте colorBlue
     id: ParamedicPDA
     ears: ClothingHeadsetMedical
     belt: ClothingBeltParamedicFilled
