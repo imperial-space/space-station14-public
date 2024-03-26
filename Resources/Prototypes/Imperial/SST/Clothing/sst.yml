@@ -1,0 +1,94 @@
+- type: entity
+  parent: SyndieClothingOuterBaseLarge
+  id: ClothingOuterArmorSSTMarauder
+  name: "captain's carapace"
+  description: "An armored chestpiece that provides protection whilst still offering maximum mobility and flexibility. Issued only to the station's finest."
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/OuterClothing/sst.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/OuterClothing/sst.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.3
+        Slash: 0.3
+        Piercing: 0.3 #Оно должно быть лучше рига, поскольку бронированные скафы - бред + оно не защищает от разгерметизации. У ССТ стоит 80% армора ради паритета с эскадроном. Во всяком случае числовое превосходство на стороне эскадрона смерти. Значительное числовое превосходство. 4 против 12.
+        Heat: 0.3
+        Caustic: 0.3
+        Cold: 0.3
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
+  - type: Item
+    size: Large
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHelmetSSTMarauder
+  name: helmet
+  description: Standard security gear. Protects the head from impacts.
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/Helmet/sst.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/Helmet/sst.rsi
+  - type: Armor 
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.6
+        Heat: 0.6
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    - HidesHair
+
+- type: entity
+  parent: SyndieClothingHandsBase
+  id: ClothingHandsGlovesCombatPlus
+  name: fc gloves
+  description: Regal blue gloves, with a nice gold trim. Swanky.
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/Gloves/combat_plus.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/Gloves/combat_plus.rsi
+  - type: GloveHeatResistance
+    heatResistance: 2500
+  - type: Insulated
+  - type: MeleeWeapon
+    autoAttack: true
+    attackRate: 4
+    damage:
+      types:
+       Blunt: 8
+    soundHit:
+      collection: Punch
+    animation: WeaponArcFist
+
+- type: entity
+  parent: SyndieClothingHandsBase
+  id: ClothingHandsGlovesCombatSST
+  name: fc gloves
+  description: Regal blue gloves, with a nice gold trim. Swanky.
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/Gloves/combat.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/Gloves/combat.rsi
+  - type: GloveHeatResistance
+    heatResistance: 1400
+  - type: Insulated
+  - type: MeleeWeapon
+    autoAttack: true
+    attackRate: 2
+    damage:
+      types:
+       Blunt: 7.5
+    soundHit:
+      collection: Punch
+    animation: WeaponArcFist

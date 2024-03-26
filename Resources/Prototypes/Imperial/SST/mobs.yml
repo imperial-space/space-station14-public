@@ -1,0 +1,52 @@
+- type: entity
+  parent: BaseMobHuman
+  id: SSTMobHumanCmd
+  name: Gray Fox
+  components:
+  - type: SST
+    actionIds:
+    - ActionSSTZoom 
+    - ActionSSTBootSweep
+  - type: SSTZoom
+  - type: SSTBootSweep
+    damage:
+      types:
+        Blunt: 30
+  - type: Loadout
+    prototypes: [ SSTLeaderGear ]
+
+- type: entity
+  parent: BaseMobHuman
+  id: SSTMobHumanAssault1
+  name: Frank Jaeger
+  components:
+  - type: SST
+    actionIds:
+    - ActionSSTZoom 
+  - type: SSTZoom
+  - type: Loadout
+    prototypes: [ SSTAssaultGear ]
+
+- type: entity
+  parent: BaseMobHuman
+  id: SSTMobHumanAssault2
+  name: Pacifica Ocean
+  components:
+  - type: SST
+    actionIds:
+    - ActionSSTZoom 
+  - type: SSTZoom #add female gender later
+  - type: Loadout
+    prototypes: [ SSTAssaultGear ]
+
+- type: entity
+  parent: BaseMobHuman
+  id: SSTMobHumanSupport
+  name: SIGINT
+  components:
+  - type: SST
+    actionIds:
+    - ActionSSTZoom 
+  - type: SSTZoom
+  - type: Loadout
+    prototypes: [ SSTSupportGear ]

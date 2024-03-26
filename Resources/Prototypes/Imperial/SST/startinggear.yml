@@ -1,0 +1,118 @@
+- type: startingGear
+  id: SSTLeaderGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitGorlexCasual
+    back: ClothingControlModsuitSSTOperativeCMDSealed
+    shoes: ClothingShoesBootsJack
+    head: ClothingHeadHelmetSSTMarauder
+    eyes: ClothingEyesHudSyndicate
+    mask: ClothingMaskGorlexAdvancedGasmask
+    gloves: ClothingHandsGlovesCombatPlus
+    outerClothing: ClothingOuterArmorSSTMarauder
+    id: ERTLeaderPDA #Todo
+    ears: ClothingHeadsetAltSyndicate
+    belt: ClothingBeltGorlexWebbing #Todo
+    pocket1: BaseUplinkRadio40TC
+
+- type: startingGear
+  id: SSTAssaultGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitGorlexCasual
+    back: ClothingControlModsuitOperativeCMDSealedFractionBoom
+    shoes: ClothingShoesBootsJack
+    head: ClothingHeadHelmetSSTMarauder
+    eyes: ClothingEyesHudSyndicate
+    mask: ClothingMaskGorlexAdvancedGasmask
+    gloves: ClothingHandsGlovesCombatSST
+    outerClothing: ClothingOuterArmorSSTMarauder
+    id: ERTLeaderPDA #Todo
+    ears: ClothingHeadsetAltSyndicate
+    belt: ClothingBeltGorlexWebbing #Todo
+    pocket1: BaseUplinkRadio40TC
+
+- type: startingGear
+  id: SSTSupportGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitGorlexCombat
+    back: ClothingControlModsuitSSTOperativeSupportSealed
+    shoes: ClothingShoesBootsJack
+    head: ClothingHeadHelmetSSTMarauder
+    eyes: ClothingEyesHudSyndicate
+    mask: ClothingMaskGorlexAdvancedGasmask
+    gloves: ClothingHandsGlovesCombatSST
+    outerClothing: ClothingOuterArmorSSTMarauder
+    id: ERTLeaderPDA #Todo
+    ears: ClothingHeadsetAltSyndicate
+    belt: ClothingBeltGorlexWebbing #Todo
+    pocket1: BaseUplinkRadio40TC
+
+- type: startingGear
+  id: GorlexGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitGorlexCombat
+    back: ClothingControlModsuitOperativeSealedFractionBoom
+    shoes: ClothingShoesBootsJack
+    eyes: ClothingEyesHudSyndicate
+    mask: ClothingMaskGorlexAdvancedGasmask
+    gloves: ClothingHandsGlovesCombatSST
+    id: ERTLeaderPDA #Todo
+    ears: ClothingHeadsetAltSyndicate
+    belt: ClothingBeltGorlexWebbing #Todo
+
+- type: startingGear
+  id: GorlexSecurityConsultantGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitGorlexSecurityConsultant
+    back: ClothingControlModsuitOperativeSealedFractionBoom
+    shoes: ClothingShoesBootsJack
+    eyes: ClothingEyesHudSyndicate
+    mask: ClothingMaskGorlexAdvancedGasmask
+    gloves: ClothingHandsGlovesCombatSST
+    id: ERTLeaderPDA #Todo
+    ears: ClothingHeadsetAltSyndicate
+    outerClothing: ClothingOuterArmorGorlexCoat
+    head: ClothingHeadHelmetGorlexCap
+    belt: ClothingBeltGorlexWebbing #Todo
+
+- type: startingGear
+  id: CybersunGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCybersun
+    back: ClothingControlModsuitOperativeSealedFractionBoom
+    shoes: ClothingShoesBootsJack
+    eyes: ClothingEyesHudSyndicate
+    mask: ClothingMaskCybersunWhiteBalaclava
+    gloves: ClothingHandsGlovesBlackGauntlets
+    id: ERTLeaderPDA #Todo
+    ears: ClothingHeadsetAltSyndicate
+    outerClothing: ClothingOuterArmorCybersun
+    belt: ClothingBeltGorlexWebbing #Todo
+
+- type: startingGear
+  id: InterdyneTraumaTeamGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitTraumaTeam
+    back: ClothingControlModsuitOperativeSealedFractionBoom
+    shoes: ClothingShoesBootsJack
+    eyes: ClothingEyesHudSyndicate
+    mask: ClothingMaskGorlexAdvancedGasmask
+    gloves: ClothingHandsGlovesInterdyneRedNitrile
+    id: ERTLeaderPDA #Todo
+    ears: ClothingHeadsetAltSyndicate
+    outerClothing: ClothingOuterArmorTraumaTeam
+    head: ClothingHeadHelmetTraumaTeam
+    belt: ClothingBeltGorlexWebbing #Todo
+
+- type: startingGear
+  id: InterdyneLabcoatGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitTraumaTeam
+    back: ClothingControlModsuitOperativeSealedFractionBoom
+    shoes: ClothingShoesBootsJack
+    eyes: ClothingEyesHudSyndicate
+    mask: ClothingMaskGorlexAdvancedGasmask
+    gloves: ClothingHandsGlovesInterdyneRedNitrile
+    id: ERTLeaderPDA #Todo
+    ears: ClothingHeadsetAltSyndicate
+    outerClothing: ClothingOuterArmorInterdyneLabcoat
+    belt: ClothingBeltGorlexWebbing #Todo

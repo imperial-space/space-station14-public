@@ -1,0 +1,87 @@
+- type: statusIcon
+  id: SSTAssault
+  priority: 0
+  locationPreference: Left 
+  icon:
+    sprite: Imperial/SST/Hud/synd.rsi
+    state: Assault
+
+- type: statusIcon
+  id: SSTCmd
+  priority: 0
+  locationPreference: Left 
+  icon:
+    sprite: Imperial/SST/Hud/synd.rsi
+    state: Cmd
+
+- type: statusIcon
+  id: SSTConsultant
+  priority: 0
+  locationPreference: Left 
+  icon:
+    sprite: Imperial/SST/Hud/synd.rsi
+    state: Consultant
+
+- type: statusIcon
+  id: Cybersun
+  priority: 0
+  locationPreference: Left 
+  icon:
+    sprite: Imperial/SST/Hud/synd.rsi
+    state: Cybersun
+
+- type: statusIcon
+  id: Support
+  priority: 0
+  locationPreference: Left 
+  icon:
+    sprite: Imperial/SST/Hud/synd.rsi
+    state: Support
+
+- type: entity
+  id: SSTEffectPunch
+  noSpawn: true
+  components:
+  - type: TimedDespawn
+    lifetime: 0.4
+  - type: Sprite
+    sprite: Imperial/SST/Effects/attack.rsi
+    state: punch
+    drawdepth: Effects
+  - type: EffectVisuals
+  - type: Tag
+    tags:
+    - HideContextMenu
+
+- type: entity
+  id: SSTOverwatch 
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Hud/portraits.rsi
+    state: overwatch
+    layers:
+        - state: "overwatch"
+          shader: unshaded
+    drawdepth: Objects
+
+- type: entity
+  id: SSTCombatRobot 
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Hud/portraits.rsi
+    state: combatrobot
+    layers:
+        - state: "combatrobot"
+          shader: unshaded
+    drawdepth: Objects
+
+- type: entity
+  id: SSTLocalMilitia
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Hud/portraits.rsi
+    state: localmilitia
+    layers:
+        - state: "localmilitia"
+          shader: unshaded
+    drawdepth: Objects

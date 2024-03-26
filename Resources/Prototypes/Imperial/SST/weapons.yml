@@ -1,0 +1,197 @@
+# - type: entity
+#   name: C-20r sub machine gun
+#   parent: BaseWeaponSubMachineGun 
+#   id: WeaponSubMachineGunC12rTGMC
+#   description: A firearm that is often used by the infamous nuclear operatives. Uses .35 auto ammo.
+#   components:
+#   - type: Sprite
+#     sprite: Imperial/TGMC/Weapon/c12r.rsi
+#     layers:
+#     - state: base
+#       map: ["enum.GunVisualLayers.Base"]
+#     - state: mag-0
+#       map: ["enum.GunVisualLayers.Mag"]
+  # - type: Gun
+  #   fireRate: 7
+  #   minAngle: 2
+  #   maxAngle: 10
+  #   angleIncrease: 3
+  #   angleDecay: 16
+  #   projectileSpeed: 28
+#     soundGunshot:
+#       path: /Audio/Imperial/TGMC/Gunshots/gun_p14.ogg
+#   - type: ChamberMagazineAmmoProvider
+#     autoEject: true
+#   - type: MagazineVisuals
+#     magState: mag
+#     steps: 1
+#     zeroVisible: true
+#   - type: Appearance
+  # - type: ItemSlots
+  #   slots:
+  #     gun_magazine:
+  #       name: Magazine
+  #       startingItem: BaseMagazinePistolSubMachineGunC12RTGMC
+  #       insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+  #       ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+  #       priority: 2
+  #       whitelist:
+  #         tags:
+  #           - BaseMagazinePistolSubMachineGunC12RTGMC
+
+- type: entity
+  name: C-20r sub machine gun
+  parent: BaseWeaponSubMachineGun
+  id: WeaponSubMachineGunCr42
+  description: A firearm that is often used by the infamous nuclear operatives. Uses .35 auto ammo.
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Weapons/cr42.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    fireRate: 7
+    minAngle: 2
+    maxAngle: 8
+    angleIncrease: 2
+    angleDecay: 16
+    projectileSpeed: 28
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/c-20r.ogg
+  - type: ChamberMagazineAmmoProvider
+    autoEject: true
+  - type: Appearance
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: BaseMagazinePistolSubMachineGunCr42
+        insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - BaseMagazinePistolSubMachineGunCr42
+  - type: Item
+    sprite: Imperial/SST/Weapons/cr42inhands.rsi
+    size: Normal
+  - type: StaticPrice
+    price: 5000
+
+- type: entity
+  name: C-20r sub machine gun
+  parent: BaseWeaponSubMachineGun #ветвясь от шотгана прототип разрывается
+  id: WeaponShotgunCentaur
+  description: A firearm that is often used by the infamous nuclear operatives. Uses .35 auto ammo.
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Weapons/centaur.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    fireRate: 2.25
+    minAngle: 2
+    maxAngle: 8
+    angleIncrease: 2
+    angleDecay: 16
+    projectileSpeed: 28
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/c-20r.ogg
+  - type: ChamberMagazineAmmoProvider
+    autoEject: true
+  - type: Appearance
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: BaseMagazineShotgunCentaur
+        insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - BaseMagazineShotgunCentaur
+  - type: Item
+    sprite: Imperial/SST/Weapons/centaurinhands.rsi
+    size: Normal
+  - type: StaticPrice
+    price: 7500
+
+- type: entity
+  name: Haarabad Rifle
+  parent: BaseWeaponRifle
+  id: WeaponRifleJahve
+  description: A firearm that is often used by the infamous nuclear operatives. Uses .35 auto ammo.
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Weapons/jahve.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    fireRate: 6.75
+    minAngle: 2
+    maxAngle: 5
+    angleIncrease: 1
+    angleDecay: 16
+    projectileSpeed: 30
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: BaseMagazineRifleJahve
+        insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - BaseMagazineRifleJahve
+  - type: Item
+    sprite: Imperial/SST/Weapons/jahveinhands.rsi
+    size: Normal
+  - type: StaticPrice
+    price: 6500
+
+- type: entity
+  name: L6 SAW
+  id: WeaponHeavyAssaultL6
+  parent: BaseWeaponLightMachineGun
+  description: A rather traditionally made LMG with a pleasantly lacquered wooden pistol grip. Uses .30 rifle ammo.
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Weapons/l6assault.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-3
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: true
+  - type: Appearance
+  - type: Gun
+    fireRate: 8
+    minAngle: 3
+    maxAngle: 9
+    angleIncrease: 2
+    angleDecay: 16
+    projectileSpeed: 30
+  - type: Item
+    sprite: Imperial/SST/Weapons/l6inhands.rsi
+    size: Normal
+  - type: StaticPrice
+    price: 15000

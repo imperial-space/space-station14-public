@@ -578,6 +578,7 @@
   - type: EyeProtection
   - type: IdentityBlocker
 
+
 - type: entity
   parent: ClothingHeadHelmetModsuitCEBase
   id: ClothingHeadHelmetModsuitSSTOperativeSupportSealed

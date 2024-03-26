@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "license": "NC-BY-SA-3.0",
+  "copyright": "Taken from TGMC made by Gregor",
+  "size": {
+    "x": 64,
+    "y": 64
+  },
+  "states": [
+    {
+      "name": "combatrobot"
+    },
+    {
+      "name": "localmilitia"
+    },
+    {
+      "name": "overwatch"
+    }
+  ]
+}

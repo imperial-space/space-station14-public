@@ -1,0 +1,35 @@
+- type: entity
+  abstract: true
+  parent: ClothingHandsBase
+  id: SyndieClothingHandsBase
+  components:
+  # - type: QualityOfItem
+  #   qualityWeights:
+  #     0: 0
+  #     1: 0
+  #     2: 0
+  #     3: 90
+  #     4: 10
+  #     5: 0
+  #     6: 0
+  - type: Tag
+    tags:
+    - MonkeyWearable
+
+- type: entity
+  abstract: true
+  parent: ClothingOuterBaseLarge
+  id: SyndieClothingOuterBaseLarge
+  components:
+  # - type: QualityOfItem
+  #   qualityWeights:
+  #     0: 0
+  #     1: 0
+  #     2: 0
+  #     3: 90
+  #     4: 10
+  #     5: 0
+  #     6: 0
+  - type: Tag
+    tags:
+    - MonkeyWearable

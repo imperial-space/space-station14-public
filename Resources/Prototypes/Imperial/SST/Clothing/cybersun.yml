@@ -1,0 +1,74 @@
+- type: entity
+  parent: SyndieClothingHandsBase
+  id: ClothingHandsGlovesBlackGauntlets
+  name: fc gloves
+  description: Regal blue gloves, with a nice gold trim. Swanky.
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/Gloves/black_gauntlets.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/Gloves/black_gauntlets.rsi
+  - type: GloveHeatResistance
+    heatResistance: 1400
+  - type: Insulated
+
+- type: entity
+  parent: SyndieClothingOuterBaseLarge
+  id: ClothingOuterArmorCybersun
+  name: "captain's carapace"
+  description: "An armored chestpiece that provides protection whilst still offering maximum mobility and flexibility. Issued only to the station's finest."
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/OuterClothing/cybersun.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/OuterClothing/cybersun.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.5
+        Heat: 0.5
+        Caustic: 0.35
+        Stamina: 0.85
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCybersun
+  name: cargo tech jumpsuit
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/Uniforms/cybersun.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/Uniforms/cybersun.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCSOCybersun
+  name: cargo tech jumpsuit
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/Uniforms/cybersun_exec_m.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/Uniforms/cybersun_exec_m.rsi
+
+- type: entity
+  parent: ClothingMaskPullableBase
+  id: ClothingMaskCybersunWhiteBalaclava
+  name: security gas mask
+  description: A standard issue Security gas mask.
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/Mask/white_balaclava.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/Mask/white_balaclava.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Cold: 0.9
+        Caustic: 0.9

@@ -1,0 +1,157 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitGorlexCombat
+  name: cargo tech jumpsuit
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/Uniforms/gorlex1.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/Uniforms/gorlex1.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitGorlexCasual
+  name: cargo tech jumpsuit
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/Uniforms/gorlex2.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/Uniforms/gorlex2.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitGorlexSecurityConsultant
+  name: cargo tech jumpsuit
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/Uniforms/gorlex_officer.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/Uniforms/gorlex_officer.rsi
+
+- type: entity
+  parent: SyndieClothingOuterBaseLarge
+  id: ClothingOuterArmorGorlexCoat
+  name: "captain's carapace"
+  description: "An armored chestpiece that provides protection whilst still offering maximum mobility and flexibility. Issued only to the station's finest."
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/OuterClothing/gorlex.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/OuterClothing/gorlex.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.5
+        Heat: 0.5
+        Caustic: 0.75
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHelmetGorlexCap
+  name: helmet
+  description: Standard security gear. Protects the head from impacts.
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/Helmet/gorlexcap.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/Helmet/gorlexcap.rsi
+  - type: Armor 
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    - HidesHair
+
+- type: entity
+  parent: ClothingNeckBase 
+  id: ClothingNeckCloakGorlexStranger
+  name: Filler
+  description: Filler
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/Neck/Gorlex/stranger.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/Neck/Gorlex/stranger.rsi
+
+- type: entity
+  parent: ClothingNeckBase 
+  id: ClothingNeckCloakGorlexSniper
+  name: Filler
+  description: Filler
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/Neck/Gorlex/snipercloak.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/Neck/Gorlex/snipercloak.rsi
+
+- type: entity
+  parent: ClothingNeckBase 
+  id: ClothingNeckCloakGorlexShort
+  name: Filler
+  description: Filler
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/Neck/Gorlex/short.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/Neck/Gorlex/short.rsi
+
+- type: entity
+  parent: ClothingNeckBase 
+  id: ClothingNeckCloakGorlexScarf
+  name: Filler
+  description: Filler
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/Neck/Gorlex/scarf.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/Neck/Gorlex/scarf.rsi
+
+- type: entity
+  parent: ClothingNeckBase 
+  id: ClothingNeckCloakGorlexRapier
+  name: Filler
+  description: Filler
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/Neck/Gorlex/rapier.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/Neck/Gorlex/rapier.rsi
+
+- type: entity
+  parent: ClothingMaskGasSyndicate
+  id: ClothingMaskGorlexAdvancedGasmask
+  name: security gas mask
+  description: A standard issue Security gas mask.
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/Mask/elite_syndie.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/Mask/elite_syndie.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Cold: 0.6
+        Caustic: 0.5
+
+- type: entity
+  parent: ClothingBeltMilitaryWebbingBrigmed
+  id: ClothingBeltGorlexWebbing
+  name: security gas mask
+  description: A standard issue Security gas mask.
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/Belt/syndicatewebbing.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/Belt/syndicatewebbing.rsi
