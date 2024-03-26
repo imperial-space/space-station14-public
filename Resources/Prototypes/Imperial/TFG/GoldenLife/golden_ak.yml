@@ -17,6 +17,24 @@
     slots:
     - Back
     - suitStorage
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineLightRifleGolden
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineLightRifle
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgeLightRifleGolden
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeLightRifle
 
 - type: entity
   id: WeaponRifleGoldenAkLegend
@@ -32,3 +50,33 @@
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
       - state: anim
+
+- type: entity
+  id: MagazineLightRifleGolden
+  parent: BaseMagazineLightRifle
+  name: "magazine (.30 rifle)"
+  suffix: Golden
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeLightRifleGolden
+  - type: Sprite
+    sprite: Imperial/TFG/GoldenLife/GoldenAKMAgazine.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: CartridgeLightRifleGolden
+  parent: BaseCartridgeLightRifle
+  name: cartridge (.30 rifle)
+  suffix: Golden
+  components:
+  - type: CartridgeAmmo
+    proto: BulletLightRifle
+  - type: Sprite
+    sprite: Imperial/TFG/GoldenLife/goldenCartrige.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
